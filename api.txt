@@ -1,0 +1,1112 @@
+//健康血压数据
+data=<br/>
+{\"currPage\":\"1\",\"pageSize\":\"15\"}
+||{\"status\":\"success\",\"data\":[],\"msg\":\"查询成功！\"}
+||{\"status\":\"fail\",\"msg\":\"查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">页码【默认为1】</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数据【默认为15】</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">血压创建时间开始【demo：2012-12-12 12:12:12】</td></tr>
+<tr><td width=\"25%\">createTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">血压创建时间结束【demo：2012-12-12 12:12:12】</td></tr>
+<tr><td width=\"25%\">highValueMax</td><td width=\"25%\">否</td><td width=\"50%\">最大高压【< highValueMax】</td></tr>
+<tr><td width=\"25%\">highValueMin</td><td width=\"25%\">否</td><td width=\"50%\">最小高压【>=highValueMin】</td></tr>
+<tr><td width=\"25%\">lowValueMax</td><td width=\"25%\">否</td><td width=\"50%\">最大低压【<lowValueMax】</td></tr>
+<tr><td width=\"25%\">lowValueMin</td><td width=\"25%\">否</td><td width=\"50%\">最小低压【>=lowValueMin】</td></tr>
+<tr><td width=\"25%\">heartRateMax</td><td width=\"25%\">否</td><td width=\"50%\">最大心率【<heartRateMax】</td></tr>
+<tr><td width=\"25%\">heartRateMin</td><td width=\"25%\">否</td><td width=\"50%\">最小心率【>=heartRateMin】</td></tr>
+<tr><td width=\"25%\">healthLevelMax</td><td width=\"25%\">否</td><td width=\"50%\">最大健康等级【<healthLevelMax】</td></tr>
+<tr><td width=\"25%\">healthLevelMin</td><td width=\"25%\">否</td><td width=\"50%\">最小健康等级【>=healthLevelMin】</td></tr>
+<tr><td width=\"25%\">healthLevel</td><td width=\"25%\">否</td><td width=\"50%\">健康等级</td></tr>
+<tr><td width=\"25%\">username</td><td width=\"25%\">否</td><td width=\"50%\">用户名称</td></tr>
+<tr><td width=\"25%\">huiName</td><td width=\"25%\">否</td><td width=\"50%\">健康档案用户名称</td></tr>
+<tr><td width=\"25%\">pn</td><td width=\"25%\">否</td><td width=\"50%\">宜家安个人编码</td></tr>
+<tr><td width=\"25%\">dataSource</td><td width=\"25%\">否</td><td width=\"50%\">数据来源</td></tr>
+<tr><td width=\"25%\">devSn</td><td width=\"25%\">否</td><td width=\"50%\">设备号</td></tr>
+<tr><td width=\"25%\">uId</td><td width=\"25%\">否</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"25%\">huiId</td><td width=\"25%\">否</td><td width=\"50%\">健康档案用户id/td></tr>
+<tr><td width=\"25%\">routerMac</td><td width=\"25%\">否</td><td width=\"50%\">数据通mac</td></tr>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">total</td><td width=\"50%\">信息总数</td></tr>
+<tr><td width=\"50%\">rows</td><td width=\"50%\">数据集合</td></tr>
+<tr><td width=\"50%\">username</td><td width=\"50%\">用户名称</td></tr>
+<tr><td width=\"50%\">huiName</td><td width=\"50%\">健康档案用户名称</td></tr>
+<tr><td width=\"50%\">bpId</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"50%\">huiId</td><td width=\"50%\">健康档案用户id</td></tr>
+<tr><td width=\"50%\">pn</td><td width=\"50%\">宜家安个人编码</td></tr>
+<tr><td width=\"50%\">highValue</td><td width=\"50%\">高压</td></tr>
+<tr><td width=\"50%\">lowValue</td><td width=\"50%\">低压</td></tr>
+<tr><td width=\"50%\">heartRate</td><td width=\"50%\">心率</td></tr>
+<tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr>
+<tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr>
+<tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr>
+<tr><td width=\"50%\">routerMac</td><td width=\"50%\">数据通mac</td></tr>
+</tbody></table>")
+
+
+//根据主键uId获取用户信息
+data=<br/>
+{\"uId\":\"1\"}
+||{\"status\":\"success\",\"data\":{},\"msg\":\"查询成功！\"}
+||{\"status\":\"fail\",\"msg\":\"查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">uId</td><td width=\"25%\">是</td><td width=\"50%\">用户ID</td></tr>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">pId</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"50%\">username</td><td width=\"50%\">用户名称</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr>
+<tr><td width=\"50%\">iId</td><td width=\"50%\">头像</td></tr>
+<tr><td width=\"50%\">attNum</td><td width=\"50%\">关注的医生</td></tr>
+<tr><td width=\"50%\">actNum</td><td width=\"50%\">收藏的活动</td></tr>
+<tr><td width=\"50%\">footNum</td><td width=\"50%\">足迹数</td></tr>
+<tr><td width=\"50%\">rest</td><td width=\"50%\">账户余额</td></tr>
+<tr><td width=\"50%\">userPwd</td><td width=\"50%\">用户密码</td></tr>
+<tr><td width=\"50%\">userPic</td><td width=\"50%\">用户头像</td></tr>
+<tr><td width=\"50%\">keyValue</td><td width=\"50%\">登录系统的key值</td></tr>
+<tr><td width=\"50%\">phoneCheck</td><td width=\"50%\">手机号码是否已验证,0=未验证,1=已验证</td></tr>
+<tr><td width=\"50%\">hxFlag</td><td width=\"50%\">是否成功注册环信账号，0未注册；1已经注册</td></tr>
+<tr><td width=\"50%\">createUserid</td><td width=\"50%\">创建人</td></tr>
+<tr><td width=\"50%\">saleUserid</td><td width=\"50%\">销售人员</td></tr>
+<tr><td width=\"50%\">saleType</td><td width=\"50%\">销售人员类别：0，患者，1，医生,2,运营</td></tr>
+<tr><td width=\"50%\">formAddress</td><td width=\"50%\">数据来源，0从pc端注册，1从手机端注册</td></tr>
+<tr><td width=\"50%\">availableAmount</td><td width=\"50%\">可用金额</td></tr>
+<tr><td width=\"50%\">totalAmount</td><td width=\"50%\">总金额</td></tr>
+<tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">冻结金额</td></tr>
+<tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr>
+<tr><td width=\"50%\">docId</td><td width=\"50%\">推荐专家</td></tr>
+<tr><td width=\"50%\">hosId</td><td width=\"50%\">推荐机构</td></tr>
+<tr><td width=\"50%\">olduserId</td><td width=\"50%\">一期的用户ID</td></tr>
+<tr><td width=\"50%\">oldcityId</td><td width=\"50%\">一期城市id</td></tr>
+<tr><td width=\"50%\">oldproId</td><td width=\"50%\">一期省id</td></tr>
+<tr><td width=\"50%\">cityId</td><td width=\"50%\">城市id</td></tr>
+<tr><td width=\"50%\">proId</td><td width=\"50%\">省id</td></tr>
+<tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr>
+<tr><td width=\"50%\">email</td><td width=\"50%\">php_邮箱</td></tr>
+<tr><td width=\"50%\">birthday</td><td width=\"50%\">php_生日</td></tr>
+<tr><td width=\"50%\">circleTage</td><td width=\"50%\">圈子标签</td></tr>
+<tr><td width=\"50%\">userNum</td><td width=\"50%\">我的好友</td></tr>
+<tr><td width=\"50%\">conNum</td><td width=\"50%\">帖子数</td></tr>
+<tr><td width=\"50%\">allergicReaction</td><td width=\"50%\">过敏反应</td></tr>
+<tr><td width=\"50%\">nickName</td><td width=\"50%\">昵称</td></tr>
+<tr><td width=\"50%\">bloodType</td><td width=\"50%\">血型</td></tr>
+<tr><td width=\"50%\">chronic</td><td width=\"50%\">慢性病</td></tr>
+<tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr>
+<tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr>
+<tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr>
+<tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr>
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr>
+<tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr>
+<tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr>
+<tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr>
+<tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr>
+<tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr>
+</tbody></table>")
+
+
+//用户根据通行证Id修改密码
+{\"pId\":\"1009334\",\"pwd\":\"111111\",\"newPwd\":\"111111\"}
+||{\"status\":\"success\",\"data\":1000,\"msg\":\"密码修改成功！\"}
+||{\"status\":\"fail\",\"data\":\"-1000/-1001\",\"msg\":\"密码修改失败！/原密码错误\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">pId</td><td width=\"25%\">否</td><td width=\"50%\">通行证ID</td></tr>
+<tr><td width=\"25%\">pwd</td><td width=\"25%\">否</td><td width=\"50%\">原用户密码</td></tr>
+<tr><td width=\"25%\">newPwd</td><td width=\"25%\">否</td><td width=\"50%\">修改密码</td></tr>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">data</td><td width=\"50%\">操作结果：<br/>1000:密码修改成功！<br/>-1000:密码修改失败！<br/>-1001:原密码错误</td></tr>
+</tbody></table>")
+
+
+//用户登录
+data={\"account\":\"13231933618\",\"password\":\"96e79218965eb72c92a549dd5a330112\"}" + "
+||{\"status\":\"success\",\"data\":{},\"msg\":\"登录成功！\"}
+||{\"status\":\"fail\",\"msg\":\"用户名或密码不正确,请重新登录!\"}或{\"status\":\"fail\",\"msg\":\"用户名/手机号/邮箱不能为空\"}或{\"status\":\"fail\",\"msg\":\"登录密码不能为空"}或{\"status\":\"fail\",\"data\":\"503\",\"msg\":\"服务器异常，请重新登录！\"}" + "
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">account</td><td width=\"25%\">是</td><td width=\"50%\">手机号/用户名/邮箱</td>" + "</tr>
+<tr class=\"alt-row\"><td>pwd</td><td>是</td><td>登录密码【需加密】</td></tr></tbody></table>" + "
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">pId</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"50%\">username</td><td width=\"50%\">用户名称</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr>
+<tr><td width=\"50%\">iId</td><td width=\"50%\">头像</td></tr>
+<tr><td width=\"50%\">attNum</td><td width=\"50%\">关注的医生</td></tr>
+<tr><td width=\"50%\">actNum</td><td width=\"50%\">收藏的活动</td></tr>
+<tr><td width=\"50%\">footNum</td><td width=\"50%\">足迹数</td></tr>
+<tr><td width=\"50%\">rest</td><td width=\"50%\">账户余额</td></tr>
+<tr><td width=\"50%\">userPwd</td><td width=\"50%\">用户密码</td></tr>
+<tr><td width=\"50%\">userPic</td><td width=\"50%\">用户头像</td></tr>
+<tr><td width=\"50%\">keyValue</td><td width=\"50%\">登录系统的key值</td></tr>
+<tr><td width=\"50%\">phoneCheck</td><td width=\"50%\">手机号码是否已验证,0=未验证,1=已验证</td></tr>
+<tr><td width=\"50%\">hxFlag</td><td width=\"50%\">是否成功注册环信账号，0未注册；1已经注册</td></tr>
+<tr><td width=\"50%\">createUserid</td><td width=\"50%\">创建人</td></tr>
+<tr><td width=\"50%\">saleUserid</td><td width=\"50%\">销售人员</td></tr>
+<tr><td width=\"50%\">saleType</td><td width=\"50%\">销售人员类别：0，患者，1，医生,2,运营</td></tr>
+<tr><td width=\"50%\">formAddress</td><td width=\"50%\">数据来源，0从pc端注册，1从手机端注册</td></tr>
+<tr><td width=\"50%\">availableAmount</td><td width=\"50%\">可用金额</td></tr>
+<tr><td width=\"50%\">totalAmount</td><td width=\"50%\">总金额</td></tr>
+<tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">冻结金额</td></tr>
+<tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr>
+<tr><td width=\"50%\">docId</td><td width=\"50%\">推荐专家</td></tr>
+<tr><td width=\"50%\">hosId</td><td width=\"50%\">推荐机构</td></tr>
+<tr><td width=\"50%\">olduserId</td><td width=\"50%\">一期的用户ID</td></tr>
+<tr><td width=\"50%\">oldcityId</td><td width=\"50%\">一期城市id</td></tr>
+<tr><td width=\"50%\">oldproId</td><td width=\"50%\">一期省id</td></tr>
+<tr><td width=\"50%\">cityId</td><td width=\"50%\">城市id</td></tr>
+<tr><td width=\"50%\">proId</td><td width=\"50%\">省id</td></tr>
+<tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr>
+<tr><td width=\"50%\">email</td><td width=\"50%\">php_邮箱</td></tr>
+<tr><td width=\"50%\">birthday</td><td width=\"50%\">php_生日</td></tr>
+<tr><td width=\"50%\">circleTage</td><td width=\"50%\">圈子标签</td></tr>
+<tr><td width=\"50%\">userNum</td><td width=\"50%\">我的好友</td></tr>
+<tr><td width=\"50%\">conNum</td><td width=\"50%\">帖子数</td></tr>
+<tr><td width=\"50%\">allergicReaction</td><td width=\"50%\">过敏反应</td></tr>
+<tr><td width=\"50%\">nickName</td><td width=\"50%\">昵称</td></tr>
+<tr><td width=\"50%\">bloodType</td><td width=\"50%\">血型</td></tr>
+<tr><td width=\"50%\">chronic</td><td width=\"50%\">慢性病</td></tr>
+<tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr>
+<tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr>
+<tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr>
+<tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr>
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr>
+<tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr>
+<tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr>
+<tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr>
+<tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr>
+<tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr> 
+</td></tr></tbody></table>")
+
+
+
+//用户修改
+data={\"uId\":\"1\",\"username\":\"LadyGaga\"}" + "
+||{\"status\":\"success\",\"data\":\"1000\",\"msg\":\"修改用户信息成功 ！\"}
+||{\"status\":\"fail\",\"data\":\"-1000\",\"msg\":\"修改用户信息失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">uId</td><td width=\"25%\">是</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"25%\">username</td><td width=\"25%\">否</td><td width=\"50%\">用户名称</td></tr>
+<tr><td width=\"25%\">sign</td><td width=\"25%\">否</td><td width=\"50%\">个性签名</td></tr>
+<tr><td width=\"25%\">iId</td><td width=\"25%\">否</td><td width=\"50%\">头像</td></tr>
+<tr><td width=\"25%\">userPic</td><td width=\"25%\">否</td><td width=\"50%\">用户头像</td></tr>
+<tr><td width=\"25%\">oldcityId</td><td width=\"25%\">否</td><td width=\"50%\">一期城市id</td></tr>
+<tr><td width=\"25%\">oldproId</td><td width=\"25%\">否</td><td width=\"50%\">一期省id</td></tr>
+<tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市id</td></tr>
+<tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省id</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"25%\">personName</td><td width=\"25%\">否</td><td width=\"50%\">用户姓名</td></tr>
+<tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">php_邮箱</td></tr>
+<tr><td width=\"25%\">birthday</td><td width=\"25%\">否</td><td width=\"50%\">php_生日</td></tr>
+<tr><td width=\"25%\">nickName</td><td width=\"25%\">否</td><td width=\"50%\">昵称</td></tr>
+<tr><td width=\"25%\">bloodType</td><td width=\"25%\">否</td><td width=\"50%\">血型</td></tr>
+<tr><td width=\"25%\">chronic</td><td width=\"25%\">否</td><td width=\"50%\">慢性病</td></tr>
+<tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重</td></tr>
+<tr><td width=\"25%\">birthdayTime</td><td width=\"25%\">否</td><td width=\"50%\">生日</td></tr>
+<tr><td width=\"25%\">addressDetail</td><td width=\"25%\">否</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"25%\">geoX</td><td width=\"25%\">否</td><td width=\"50%\">经度</td></tr>
+<tr><td width=\"25%\">geoY</td><td width=\"25%\">否</td><td width=\"50%\">纬度</td></tr>
+<tr><td width=\"25%\">idcardNo</td><td width=\"25%\">否</td><td width=\"50%\">身份证号</td></tr>
+<tr><td width=\"25%\">qrCode</td><td width=\"25%\">否</td><td width=\"50%\">二维码图片</td></tr>
+<tr><td width=\"25%\">site</td><td width=\"25%\">否</td><td width=\"50%\">常驻地区</td></tr>
+<tr><td width=\"25%\">tableId</td><td width=\"25%\">否</td><td width=\"50%\">表ID</td></tr>
+<tr><td width=\"25%\">rowId</td><td width=\"25%\">否</td><td width=\"50%\">行记录ID</td></tr> 
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">data</td><td width=\"50%\">修改结果：<br>1000:修改成功<br/>-1000：修改失败</td></tr> 
+</td></tr></tbody></table>")
+
+
+
+
+//双创人员信息分页列表查询
+data={\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\"}" + "
+||{\"status\":\"success\",\"data\":[],\"msg\":\"查询成功！\"}
+||{\"status\":\"fail\",\"msg\":\"查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">cwId</td><td width=\"25%\">否</td><td width=\"50%\">双创人员ID</td></tr>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">机构Id(POCID）</td></tr>
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">页码【默认为1】</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数,默认为15</td></tr>
+<tr><td width=\"25%\">rank</td><td width=\"25%\">否</td><td width=\"50%\">等级</td></tr>
+<tr><td width=\"25%\">attribute</td><td width=\"25%\">否</td><td width=\"50%\">属性</td></tr>
+<tr><td width=\"25%\">userName</td><td width=\"25%\">否</td><td width=\"50%\">姓名</td></tr>
+<tr><td width=\"25%\">age</td><td width=\"25%\">否</td><td width=\"50%\">年龄</td></tr>
+<tr><td width=\"25%\">birthdayTime</td><td width=\"25%\">否</td><td width=\"50%\">出生日期</td></tr>
+<tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高cm</td></tr>
+<tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重kg</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别(0：男，1：女)</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">手机</td></tr>
+<tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">邮箱</td></tr>
+<tr><td width=\"25%\">idcardNo</td><td width=\"25%\">否</td><td width=\"50%\">身份证号码</td></tr>
+<tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省份ID</td></tr>
+<tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市Id</td></tr>
+<tr><td width=\"25%\">areaId</td><td width=\"25%\">否</td><td width=\"50%\">区域Id</td></tr>
+<tr><td width=\"25%\">addressDetail</td><td width=\"25%\">否</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"25%\">skill</td><td width=\"25%\">否</td><td width=\"50%\">擅长(技能)</td></tr>
+<tr><td width=\"25%\">verifyStatus</td><td width=\"25%\">否</td><td width=\"50%\">认证状态（0＝未认证 1=已认证）</td></tr>
+<tr><td width=\"25%\">status</td><td width=\"25%\">否</td><td width=\"50%\">状态(-1：退出，0:待审核，1：通过审核（可服务）)</td></tr>
+<tr><td width=\"25%\">verifyTime</td><td width=\"25%\">否</td><td width=\"50%\">认证时间</td></tr>
+<tr><td width=\"25%\">createTime</td><td width=\"25%\">否</td><td width=\"50%\">添加时间</td></tr>
+<tr><td width=\"25%\">updateTime</td><td width=\"25%\">否</td><td width=\"50%\">修改时间</td></tr>
+<tr><td width=\"25%\">isDel</td><td width=\"25%\">否</td><td width=\"50%\">是否删除(0:否，1：是)</td>
+</tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">cwId</td><td width=\"50%\">总金额</td></tr>
+<tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">双创人员ID</td></tr>
+<tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr>
+<tr><td width=\"50%\">pocId</td><td width=\"50%\">机构Id(POCID）</td></tr>
+<tr><td width=\"50%\">pocName</td><td width=\"50%\">机构名称</td></tr>
+<tr><td width=\"50%\">cwTypeId</td><td width=\"50%\">双创人员类型id（type_id）</td></tr>
+<tr><td width=\"50%\">TypeName</td><td width=\"50%\">类型名称</td></tr>
+<tr><td width=\"50%\">rank</td><td width=\"50%\">等级</td></tr>
+<tr><td width=\"50%\">attribute</td><td width=\"50%\">属性</td></tr>
+<tr><td width=\"50%\">userName</td><td width=\"50%\">姓名</td></tr>
+<tr><td width=\"50%\">age</td><td width=\"50%\">年龄</td></tr>
+<tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr>
+<tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr>
+<tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr>
+<tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr>
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr>
+<tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr>
+<tr><td width=\"50%\">email</td><td width=\"50%\">邮箱</td></tr>
+<tr><td width=\"50%\">diploma</td><td width=\"50%\">文凭</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">手机</td></tr>
+<tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr>
+<tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号码</td></tr>
+<tr><td width=\"50%\">proId</td><td width=\"50%\">省份Id</td></tr>
+<tr><td width=\"50%\">cityId</td><td width=\"50%\">城市Id</td></tr>
+<tr><td width=\"50%\">areaId</td><td width=\"50%\">区域Id</td></tr>
+<tr><td width=\"50%\">proName</td><td width=\"50%\">省份</td></tr>
+<tr><td width=\"50%\">areaName</td><td width=\"50%\">区域</td></tr>
+<tr><td width=\"50%\">remark</td><td width=\"50%\">备注</td></tr>
+<tr><td width=\"50%\">skill</td><td width=\"50%\">擅长(技能)</td></tr>
+<tr><td width=\"50%\">info</td><td width=\"50%\">简介</td></tr>
+<tr><td width=\"50%\">iId(iid)</td><td width=\"50%\">正面照片</td></tr>
+<tr><td width=\"50%\">idcardFrontImg</td><td width=\"50%\">身份证正面</td></tr>
+<tr><td width=\"50%\">idcardBackImg</td><td width=\"50%\">身份证背面</td></tr>
+<tr><td width=\"50%\">otherImg</td><td width=\"50%\">其它照片</td></tr>
+<tr><td width=\"50%\">qrcode</td><td width=\"50%\">二维码</td></tr>
+<tr><td width=\"50%\">verifyStatus</td><td width=\"50%\">认证状态（0＝未认证 1=已认证）</td></tr>
+<tr><td width=\"50%\">verifyTime</td><td width=\"50%\">认证时间</td></tr>
+<tr><td width=\"50%\">status</td><td width=\"50%\">状态(-1：退出，0:待审核，1：通过审核（可服务）)</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">添加时间</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">修改时间</td></tr>
+<tr><td width=\"50%\">isDel</td><td width=\"50%\">是否删除(0:否，1：是)</td></tr>
+</td></tr></tbody></table>")
+
+
+
+//双创人员添加人员
+data={\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\",\"userName\":\"kobe\",\"sex\":\"0\",\"phone\":\"13681548144\",\"email\":\"13681548144@163.com\",\"idcardNo\":\"430822199003068896\"}" + "
+||{\"status\":\"success\",\"data\":\"1000\",\"msg\":\"添加双创人员信息成功!\"}
+||{\"status\":\"fail\",\"data\":\"-1000\",\"msg\":\"添加双创人员信息失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">机构Id(POCID）</td></tr>
+<tr><td width=\"25%\">rank</td><td width=\"25%\">否</td><td width=\"50%\">等级</td></tr>
+<tr><td width=\"25%\">cwTypeId</td><td width=\"25%\">否</td><td width=\"50%\">双创人员类型id</td></tr>
+<tr><td width=\"25%\">attribute</td><td width=\"25%\">否</td><td width=\"50%\">属性</td></tr>
+<tr><td width=\"25%\">userName</td><td width=\"25%\">是</td><td width=\"50%\">姓名</td></tr>
+<tr><td width=\"25%\">age</td><td width=\"25%\">否</td><td width=\"50%\">年龄</td></tr>
+<tr><td width=\"25%\">birthdayTime</td><td width=\"25%\">否</td><td width=\"50%\">出生日期</td></tr>
+<tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高cm</td></tr>
+<tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重kg</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">是</td><td width=\"50%\">性别(0：男，1：女)</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">是</td><td width=\"50%\">手机</td></tr>
+<tr><td width=\"25%\">email</td><td width=\"25%\">是</td><td width=\"50%\">邮箱</td></tr>
+<tr><td width=\"25%\">idcardNo</td><td width=\"25%\">是</td><td width=\"50%\">身份证号码</td></tr>
+<tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省份ID</td></tr>
+<tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市Id</td></tr>
+<tr><td width=\"25%\">areaId</td><td width=\"25%\">否</td><td width=\"50%\">区域Id</td></tr>
+<tr><td width=\"25%\">addressDetail</td><td width=\"25%\">否</td><td width=\"50%\">详细地址</td></tr>
+<tr><td width=\"25%\">skill</td><td width=\"25%\">否</td><td width=\"50%\">擅长(技能)</td></tr>
+<tr><td width=\"25%\">info</td><td width=\"25%\">否</td><td width=\"50%\">简介</td></tr>
+<tr><td width=\"25%\">iId</td><td width=\"25%\">否</td><td width=\"50%\">正面照片</td></tr>
+<tr><td width=\"25%\">idcardFrontImg</td><td width=\"25%\">否</td><td width=\"50%\">身份证正面</td></tr>
+<tr><td width=\"25%\">idcardBackImg</td><td width=\"25%\">否</td><td width=\"50%\">身份证背面</td></tr>
+<tr><td width=\"25%\">idcardFrontImg</td><td width=\"25%\">否</td><td width=\"50%\">身份证正面</td></tr>
+<tr><td width=\"25%\">otherImg</td><td width=\"25%\">否</td><td width=\"50%\">其它照片</td></tr>
+<tr><td width=\"25%\">qrcode</td><td width=\"25%\">否</td><td width=\"50%\">二维码</td></tr>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody><tr><td width=\"50%\">data</td><td width=\"50%\">修改结果：<br>1000:修改成功<br/>-1000：修改失败</td></tr> </td></tr></tbody></table>")
+
+
+data={\"cwId\":\"xxxxxxx\"}" + "
+||{\"status\":\"success\",\"msg\":\"删除成功！\"}
+||{\"status\":\"fail\",\"msg\":\"删除失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">cwId</td><td width=\"25%\">是</td><td width=\"50%\">双创人员主键【单条数据删除：demo：｛cwId：""｝，批量删除demo：｛cwId：["","",""]｝】</td></tr>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">status</td><td width=\"50%\">删除结果：<br>success:删除成功<br/>fail：删除失败</td></tr> 
+</td></tr></tbody></table>")
+
+
+//添加堂医(未添加)
+{\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\",\"doctorName\":\"yijingTOWN\"}
+||{\"status\":\"success\",\"data\":1000,\"msg\":\"添加堂医成功！\"}
+||{\"status\":\"fail\",\"data\":\"-1000/-1001/-1002/-1003\",\"msg\":\"添加堂医失败！/身份证已经被注册/电话号码已经被注册/邮箱已经被注册\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">poc主键</td></tr>
+<tr><td width=\"25%\">idCard</td><td width=\"25%\">否</td><td width=\"50%\">身份证</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">电话号码</td></tr>
+<tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">邮箱</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"25%\">doctorName</td><td width=\"25%\">否</td><td width=\"50%\">医生姓名</td></tr>
+<tr><td width=\"25%\">iId</td><td width=\"25%\">否</td><td width=\"50%\">头像</td></tr>
+<tr><td width=\"25%\">dlId</td><td width=\"25%\">否</td><td width=\"50%\">职称id</td></tr>
+<tr><td width=\"25%\">sign</td><td width=\"25%\">否</td><td width=\"50%\">个性签名</td></tr>
+<tr><td width=\"25%\">info</td><td width=\"25%\">否</td><td width=\"50%\">医生简介</td></tr>
+<tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省id</td></tr>
+<tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市id</td></tr>
+<tr><td width=\"25%\">expertin</td><td width=\"25%\">否</td><td width=\"50%\">擅长</td></tr>
+<tr><td width=\"25%\">cardFrontImg</td><td width=\"25%\">否</td><td width=\"50%\">身份证正面</td></tr>
+<tr><td width=\"25%\">cardBackImg</td><td width=\"25%\">否</td><td width=\"50%\">身份证反面</td></tr>
+<tr><td width=\"25%\">licenseImg</td><td width=\"25%\">否</td><td width=\"50%\">行医执照</td></tr>
+<tr><td width=\"25%\">licenseNumber</td><td width=\"25%\">否</td><td width=\"50%\">执业证编号</td></tr>
+<tr><td width=\"25%\">certificationImg</td><td width=\"25%\">否</td><td width=\"50%\">资格证</td></tr>
+<tr><td width=\"25%\">certificationNumber</td><td width=\"25%\">否</td><td width=\"50%\">资格证编号</td></tr>
+<tr><td width=\"25%\">depTel</td><td width=\"25%\">否</td><td width=\"50%\">科室座机</td></tr>
+<tr><td width=\"25%\">hosName</td><td width=\"25%\">否</td><td width=\"50%\">医院名称</td></tr>
+<tr><td width=\"25%\">unionName</td><td width=\"25%\">否</td><td width=\"50%\">医盟名</td></tr>
+<tr><td width=\"25%\">unionId</td><td width=\"25%\">否</td><td width=\"50%\">医盟ID</td></tr>
+<tr><td width=\"25%\">hId</td><td width=\"25%\">否</td><td width=\"50%\">医院ID</td></tr>
+<tr><td width=\"25%\">depName</td><td width=\"25%\">否</td><td width=\"50%\">科室名称</td></tr>
+<tr><td width=\"25%\">depId</td><td width=\"25%\">否</td><td width=\"50%\">科室ID</td></tr>
+<tr><td width=\"25%\">levelName</td><td width=\"25%\">否</td><td width=\"50%\">教学职称名称</td></tr>
+<tr><td width=\"25%\">levelId</td><td width=\"25%\">否</td><td width=\"50%\">教学职称ID</td></tr>
+<tr><td width=\"25%\">clinicName</td><td width=\"25%\">否</td><td width=\"50%\">医生职称名称</td></tr>
+<tr><td width=\"25%\">clinicId</td><td width=\"25%\">否</td><td width=\"50%\">医生职称id</td></tr>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">data</td><td width=\"50%\">操作结果：<br/>1000:添加堂医成功！<br/>-1000:添加堂医失败！<br/>-1001:身份证已经被注册<br/>-1002:电话号码已经被注册<br/>-1003:邮箱已经被注册！</td></tr>
+</tbody></table>")
+
+//添加堂医(已添加)
+{\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\",\"doctorName\":\"yijingTOWN\"}
+||{\"status\":\"success\",\"data\":1000,\"msg\":\"添加堂医成功！\"}
+||{\"status\":\"fail\",\"data\":\"-1000/\",\"msg\":\"添加堂医失败！\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">poc主键</td></tr>
+<tr><td width=\"25%\">idCard</td><td width=\"25%\">否</td><td width=\"50%\">身份证</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">电话号码</td></tr>
+<tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">邮箱</td></tr>
+<tr><td width=\"25%\">doctorName</td><td width=\"25%\">否</td><td width=\"50%\">医生姓名</td></tr>
+<tr><td width=\"25%\">dId</td><td width=\"25%\">否</td><td width=\"50%\">医生主键</td></tr>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">data</td><td width=\"50%\">操作结果：<br/>1000:添加堂医成功！<br/>-1000:添加堂医失败！</td></tr>
+</tbody></table>")
+
+//删除堂医
+data={\"id\":\"xxxxxxx\"}" + "
+||{\"status\":\"success\",\"msg\":\"删除成功！\"}
+||{\"status\":\"fail\",\"msg\":\"删除失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">id</td><td width=\"25%\">是</td><td width=\"50%\">POC医生管理主键【单条数据删除：demo：｛id：""｝，批量删除demo：｛id：["","",""]｝】</td></tr>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">status</td><td width=\"50%\">删除结果：<br>success:删除成功<br/>fail：删除失败</td></tr> 
+</td></tr></tbody></table>")
+
+//堂医查询
+data={\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\"}" + "
+||{\"status\":\"success\",\"data\":[],\"msg\":\"查询成功！\"}
+||{\"status\":\"fail\",\"msg\":\"查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">机构Id(POCID）</td></tr>
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">页码【默认为1】</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数,默认为15</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数,默认为15</td></tr>
+<tr><td width=\"25%\">doctorName</td><td width=\"25%\">否</td><td width=\"50%\">医生姓名</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省id</td></tr>
+<tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市id</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"25%\">idCard</td><td width=\"25%\">否</td><td width=\"50%\">身份证号</td></tr>
+<tr><td width=\"25%\">hosName</td><td width=\"25%\">否</td><td width=\"50%\">医院名称</td></tr>
+<tr><td width=\"25%\">unionName</td><td width=\"25%\">否</td><td width=\"50%\">医盟名</td></tr>
+<tr><td width=\"25%\">depName</td><td width=\"25%\">否</td><td width=\"50%\">科室名称</td></tr>
+<tr><td width=\"25%\">levelName</td><td width=\"25%\">否</td><td width=\"50%\">教学职称名称</td></tr>
+<tr><td width=\"25%\">clinicName</td><td width=\"25%\">否</td><td width=\"50%\">医生职称名称</td></tr>
+<tr><td width=\"25%\">status</td><td width=\"25%\">否</td><td width=\"50%\">状态（0：停止，1：启用）</td></tr>
+<tr><td width=\"25%\">orderColumn</td><td width=\"25%\">否</td><td width=\"50%\">排序字段【create_time：注册时间[默]】】</td></tr>
+<tr><td width=\"25%\">order</td><td width=\"25%\">否</td><td width=\"50%\">排序方式【降序:0,升序：1[默认]】</td></tr>
+</td></tr></tbody></table>")
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">pocId</td><td width=\"50%\">机构Id(POCID）</td></tr>
+<tr><td width=\"50%\">dId</td><td width=\"50%\">医生主键</td></tr>
+<tr><td width=\"50%\">pId</td><td width=\"50%\">关联passport的p_id</td></tr>
+<tr><td width=\"50%\">doctorName</td><td width=\"50%\">医生姓名</td></tr>
+<tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女</td></tr>
+<tr><td width=\"50%\">iId(iid)</td><td width=\"50%\">正面照片</td></tr>
+<tr><td width=\"50%\">dlId</td><td width=\"50%\">职称id</td></tr>
+<tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr>
+<tr><td width=\"50%\">info</td><td width=\"50%\">医生简介</td></tr>
+<tr><td width=\"50%\">loveNum</td><td width=\"50%\">爱心值</td></tr>
+<tr><td width=\"50%\">fansNum</td><td width=\"50%\">粉丝值</td></tr>
+<tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr>
+<tr><td width=\"50%\">isVideo</td><td width=\"50%\">是否为视频通话医生，0=不是，1=是</td></tr>
+<tr><td width=\"50%\">isFind</td><td width=\"50%\">是否允许患者找到我，0=不可找到，1=可以找到</td></tr>
+<tr><td width=\"50%\">isConsult</td><td width=\"50%\">是否允许患者向我咨询，0=不可以，1=可以</td></tr>
+<tr><td width=\"50%\">isContact</td><td width=\"50%\">是否允许陌生好友联系我，0=不可联系，1=可以联系</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"50%\">expertin</td><td width=\"50%\">擅长</td></tr
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号码</td></tr>
+<tr><td width=\"50%\">proId</td><td width=\"50%\">省份Id</td></tr>
+<tr><td width=\"50%\">cityId</td><td width=\"50%\">城市Id</td></tr>
+<tr><td width=\"50%\">areaId</td><td width=\"50%\">区域Id</td></tr>
+<tr><td width=\"50%\">depTel</td><td width=\"50%\">科室座机</td></tr>
+<tr><td width=\"50%\">hosName</td><td width=\"50%\">医院名称</td></tr>
+<tr><td width=\"50%\">unionName</td><td width=\"50%\">医盟名</td></tr>
+<tr><td width=\"50%\">unionId</td><td width=\"50%\">医盟ID</td></tr>
+<tr><td width=\"50%\">hId</td><td width=\"50%\">医院ID</td></tr>
+<tr><td width=\"50%\">depName</td><td width=\"50%\">科室名称</td></tr>
+<tr><td width=\"50%\">depId</td><td width=\"50%\">科室ID</td></tr>
+<tr><td width=\"50%\">levelName</td><td width=\"50%\">教学职称名称</td></tr>
+<tr><td width=\"50%\">levelId</td><td width=\"50%\">教学职称ID</td></tr>
+<tr><td width=\"50%\">clinicName</td><td width=\"50%\">医生职称名称</td></tr>
+<tr><td width=\"50%\">clinicId</td><td width=\"50%\">医生职称id</td></tr>
+<tr><td width=\"50%\">checkFlag</td><td width=\"50%\">是否审核通过,0=待审,1=通过,2=拒绝</td></tr>
+<tr><td width=\"50%\">enableFlag</td><td width=\"50%\">是否可用</td></tr>
+<tr><td width=\"50%\">checkDate</td><td width=\"50%\">审核时间</td></tr>
+<tr><td width=\"50%\">userName</td><td width=\"50%\">用户名</td></tr>
+<tr><td width=\"50%\">email</td><td width=\"50%\">php-邮箱地址</td></tr>
+<tr><td width=\"50%\">auditContent</td><td width=\"50%\">审核内容</td></tr>
+<tr><td width=\"50%\">docType</td><td width=\"50%\">医生类型（0：医生，1：堂医）</td></tr>
+<tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">status</td><td width=\"50%\">状态(-1：退出，0:待审核，1：通过审核（可服务）)</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">添加时间</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">修改时间</td></tr>
+<tr><td width=\"50%\">isDel</td><td width=\"50%\">是否删除(0:否，1：是)</td></tr></td></tr></tbody></table>")
+
+
+
+//启用或者停止堂医
+data={\"id\":\"xxxxxxx\",\"status\":\"1\"}" + "
+||{\"status\":\"success\",\"msg\":\"启用或者停止成功！\"}
+||{\"status\":\"fail\",\"msg\":\"启用或者停止失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">id</td><td width=\"25%\">是</td><td width=\"50%\">POC医生管理主键【单条数据：demo：｛id：""｝，批量demo：｛id：["","",""]｝】</td></tr>
+<tr><td width=\"25%\">status</td><td width=\"25%\"></td><td width=\"50%\">状态（0：停止，1：启用）</td></tr>
+</tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">status</td><td width=\"50%\">结果：<br>success:启用或者停止成功<br/>fail：启用或者停止失败</td></tr> 
+</td></tr></tbody></table>")
+
+
+
+
+
+
+//注册
+
+data={\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\",\"phone\":\"13681547440\",\"pwd\":\"111111\",\"username\":\"yangkailan\",\"type\":\"1\"}" + 
+"||{\"status\":\"success\",\"data\":{},\"msg\":\"注册成功!\"}" + "||{\"status\":\"fail\",\"data\":\"-1000/-1001\",\"msg\":\"注册失败!/已注册，请直接登录！\"}" +
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead>
+ <tbody> 
+ <tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">注册类型【1：医敬TOWN会员注册，添加】</td></tr>
+ <tr><td width=\"25%\">username</td><td width=\"25%\">否</td><td width=\"50%\">用户名</td></tr>
+ <tr><td width=\"25%\">phone</td><td width=\"25%\">是</td><td width=\"50%\">手机号</td></tr>
+ <tr><td width=\"25%\">pwd</td><td width=\"25%\">是</td><td width=\"50%\">用户密码</td></tr>
+ <tr><td width=\"25%\">pocId</td><td width=\"25%\">否【医敬TOWN用户注册必须】</td><td width=\"50%\">pocId用户</td></tr>
+  <tr><td width=\"25%\">idcardNo</td><td width=\"25%\">否</td><td width=\"50%\">身份证号</td></tr>
+ </td></tr></tbody></table>" + 
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+ <tr>医敬TOWN会员注册，添加返回数据<td width=\"50%\"></td><td width=\"50%\"></td></tr>
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">pId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">username</td><td width=\"50%\">用户名</td></tr><tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr><tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr><tr><td width=\"50%\">iId</td><td width=\"50%\">头像</td></tr><tr><td width=\"50%\">attNum</td><td width=\"50%\">关注的医生</td></tr><tr><td width=\"50%\">actNum</td><td width=\"50%\">收藏的活动</td></tr><tr><td width=\"50%\">footNum</td><td width=\"50%\">足迹数</td></tr><tr><td width=\"50%\">rest</td><td width=\"50%\">账户余额</td></tr><tr><td width=\"50%\">userPwd</td><td width=\"50%\">用户密码</td></tr><tr><td width=\"50%\">userPic</td><td width=\"50%\">用户头像</td></tr><tr><td width=\"50%\">keyValue</td><td width=\"50%\">登录系统的key值</td></tr><tr><td width=\"50%\">phoneCheck</td><td width=\"50%\">手机号码是否已验证,0=未验证,1=已验证</td></tr><tr><td width=\"50%\">hxFlag</td><td width=\"50%\">是否成功注册环信账号，0未注册；1已经注册</td></tr><tr><td width=\"50%\">createUserid</td><td width=\"50%\">创建人</td></tr><tr><td width=\"50%\">saleUserid</td><td width=\"50%\">销售人员</td></tr><tr><td width=\"50%\">saleType</td><td width=\"50%\">销售人员类别：0，患者，1，医生,2,运营</td></tr><tr><td width=\"50%\">formAddress</td><td width=\"50%\">数据来源，0从pc端注册，1从手机端注册,2-倍泰</td></tr><tr><td width=\"50%\">availableAmount</td><td width=\"50%\">可用金额</td></tr><tr><td width=\"50%\">totalAmount</td><td width=\"50%\">总金额</td></tr><tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">冻结金额</td></tr><tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr><tr><td width=\"50%\">docId</td><td width=\"50%\">推荐专家</td></tr><tr><td width=\"50%\">hosId</td><td width=\"50%\">推荐机构</td></tr><tr><td width=\"50%\">olduserId</td><td width=\"50%\">一期的用户ID</td></tr><tr><td width=\"50%\">oldcityId</td><td width=\"50%\">一期城市id</td></tr><tr><td width=\"50%\">oldproId</td><td width=\"50%\">一期省id</td></tr><tr><td width=\"50%\">cityId</td><td width=\"50%\">城市id</td></tr><tr><td width=\"50%\">proId</td><td width=\"50%\">省id</td></tr><tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女2未知</td></tr><tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr><tr><td width=\"50%\">email</td><td width=\"50%\">php_邮箱</td></tr><tr><td width=\"50%\">birthday</td><td width=\"50%\">php_生日</td></tr><tr><td width=\"50%\">circleTage</td><td width=\"50%\">圈子标签</td></tr><tr><td width=\"50%\">userNum</td><td width=\"50%\">我的好友</td></tr><tr><td width=\"50%\">conNum</td><td width=\"50%\">帖子数</td></tr><tr><td width=\"50%\">allergicReaction</td><td width=\"50%\">过敏反应</td></tr><tr><td width=\"50%\">nickName</td><td width=\"50%\">昵称</td></tr><tr><td width=\"50%\">bloodType</td><td width=\"50%\">血型</td></tr><tr><td width=\"50%\">chronic</td><td width=\"50%\">慢性病</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr><tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr><tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr><tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr><tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr><tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr><tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr><tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr><tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr><tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr><tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr><tr><td width=\"50%\">levelId</td><td width=\"50%\">等级Id</td></tr><tr><td width=\"50%\">points</td><td width=\"50%\">会员积分</td></tr><tr><td width=\"50%\">telephone</td><td width=\"50%\">固定电话</td></tr><tr><td width=\"50%\">areaId</td><td width=\"50%\">区域Id</td></tr></tbody></table>")
+ 
+ 
+ 
+ //登录
+ data=
+{\"account\":\"13231933618\",\"pwd\":\"96e79218965eb72c92a549dd5a330112\",\"type\":\"1\"}" + "
+||{\"status\":\"success\",\"data\":{},\"msg\":\"登录成功！\"}
+||{\"status\":\"fail\",\"msg\":\"用户名或密码不正确,请重新登录!\"}或{\"status\":\"fail\",\"msg\":\"用户名/手机号/邮箱不能为空\"}
+或{\"status\":\"fail\",\"msg\":\"登录密码不能为空\"}或{\"status\":\"fail\",\"data\":\"503\",\"msg\":\"服务器异常，请重新登录！\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr>
+</thead><tbody><tr><td width=\"25%\">account</td><td width=\"25%\">是</td><td width=\"50%\">手机号/用户名/邮箱</td>" + "</tr>
+<tr class=\"alt-row\"><td>pwd</td><td>是</td><td>登录密码【需加密】</td></tr>
+<tr class=\"alt-row\"><td>type</td><td>是</td><td>登录类型【1：(会员)医敬TOWN前端登录,2：POC管理员后台登录	】</td></tr>
+</tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">(会员)医敬TOWN前端登录 返回数据</td><td width=\"50%\"></td></tr><tr>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">pId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">username</td><td width=\"50%\">用户名称</td></tr><tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr><tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr><tr><td width=\"50%\">iId</td><td width=\"50%\">头像</td></tr><tr><td width=\"50%\">attNum</td><td width=\"50%\">关注的医生</td></tr><tr><td width=\"50%\">actNum</td><td width=\"50%\">收藏的活动</td></tr><tr><td width=\"50%\">footNum</td><td width=\"50%\">足迹数</td></tr><tr><td width=\"50%\">rest</td><td width=\"50%\">账户余额</td></tr><tr><td width=\"50%\">userPwd</td><td width=\"50%\">用户密码</td></tr><tr><td width=\"50%\">userPic</td><td width=\"50%\">用户头像</td></tr><tr><td width=\"50%\">keyValue</td><td width=\"50%\">登录系统的key值</td></tr><tr><td width=\"50%\">phoneCheck</td><td width=\"50%\">手机号码是否已验证,0=未验证,1=已验证</td></tr><tr><td width=\"50%\">hxFlag</td><td width=\"50%\">是否成功注册环信账号，0未注册；1已经注册</td></tr><tr><td width=\"50%\">createUserid</td><td width=\"50%\">创建人</td></tr><tr><td width=\"50%\">saleUserid</td><td width=\"50%\">销售人员</td></tr><tr><td width=\"50%\">saleType</td><td width=\"50%\">销售人员类别：0，患者，1，医生,2,运营</td></tr><tr><td width=\"50%\">formAddress</td><td width=\"50%\">数据来源，0从pc端注册，1从手机端注册</td></tr><tr><td width=\"50%\">availableAmount</td><td width=\"50%\">可用金额</td></tr><tr><td width=\"50%\">totalAmount</td><td width=\"50%\">总金额</td></tr><tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">冻结金额</td></tr><tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr><tr><td width=\"50%\">docId</td><td width=\"50%\">推荐专家</td></tr><tr><td width=\"50%\">hosId</td><td width=\"50%\">推荐机构</td></tr><tr><td width=\"50%\">olduserId</td><td width=\"50%\">一期的用户ID</td></tr><tr><td width=\"50%\">oldcityId</td><td width=\"50%\">一期城市id</td></tr><tr><td width=\"50%\">oldproId</td><td width=\"50%\">一期省id</td></tr><tr><td width=\"50%\">cityId</td><td width=\"50%\">城市id</td></tr><tr><td width=\"50%\">proId</td><td width=\"50%\">省id</td></tr><tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女</td></tr><tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr><tr><td width=\"50%\">email</td><td width=\"50%\">php_邮箱</td></tr><tr><td width=\"50%\">birthday</td><td width=\"50%\">php_生日</td></tr><tr><td width=\"50%\">circleTage</td><td width=\"50%\">圈子标签</td></tr><tr><td width=\"50%\">userNum</td><td width=\"50%\">我的好友</td></tr><tr><td width=\"50%\">conNum</td><td width=\"50%\">帖子数</td></tr><tr><td width=\"50%\">allergicReaction</td><td width=\"50%\">过敏反应</td></tr><tr><td width=\"50%\">nickName</td><td width=\"50%\">昵称</td></tr><tr><td width=\"50%\">bloodType</td><td width=\"50%\">血型</td></tr><tr><td width=\"50%\">chronic</td><td width=\"50%\">慢性病</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr><tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr><tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr><tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr><tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr><tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr><tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr><tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr><tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr><tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr><tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr> 
+<tr><td width=\"50%\"></td><td width=\"50%\"></td></tr><tr>
+<tr><td width=\"50%\">POC管理员后台登录 返回数据</td><td width=\"50%\"></td></tr><tr>
+ <tr><td width=\"50%\">pocId</td><td width=\"50%\">主键（POCid）</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">pId</td><td width=\"50%\">passportID</td></tr><tr><td width=\"50%\">pocName</td><td width=\"50%\">poc名称</td></tr><tr><td width=\"50%\">pocType</td><td width=\"50%\">poc类型（0=医院 1=医敬town 2=药店）</td></tr><tr><td width=\"50%\">pocLevel</td><td width=\"50%\">poc等级</td></tr><tr><td width=\"50%\">loginTime</td><td width=\"50%\">最后登录时间</td></tr><tr><td width=\"50%\">address</td><td width=\"50%\">地址</td></tr><tr><td width=\"50%\">phone</td><td width=\"50%\">手机</td></tr><tr><td width=\"50%\">email</td><td width=\"50%\">email</td></tr><tr><td width=\"50%\">pwd</td><td width=\"50%\">密码</td></tr><tr><td width=\"50%\">city</td><td width=\"50%\">城市</td></tr><tr><td width=\"50%\">tableId</td><td width=\"50%\">高德云图表ID</td></tr><tr><td width=\"50%\">rowId</td><td width=\"50%\">高德云图表记录ID</td></tr><tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr><tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr><tr><td width=\"50%\">info</td><td width=\"50%\">简介</td></tr><tr><td width=\"50%\">siteLogo</td><td width=\"50%\">站点logo</td></tr><tr><td width=\"50%\">siteUrl</td><td width=\"50%\">站点地址</td></tr><tr><td width=\"50%\">siteTitle</td><td width=\"50%\">站点标题</td></tr><tr><td width=\"50%\">serviceTel</td><td width=\"50%\">客服电话</td></tr><tr><td width=\"50%\">pocImg</td><td width=\"50%\">poc照片</td></tr><tr><td width=\"50%\">hospitalType</td><td width=\"50%\">医院类型</td></tr><tr><td width=\"50%\">hospitalLevel</td><td width=\"50%\">医院等级</td></tr><tr><td width=\"50%\">openTime</td><td width=\"50%\">营业开始时间</td></tr><tr><td width=\"50%\">closeTime</td><td width=\"50%\">营业结束时间</td></tr><tr><td width=\"50%\">openAllhours</td><td width=\"50%\">全天营业（0=否 1=是）</td></tr><tr><td width=\"50%\">qrcode</td><td width=\"50%\">二维码</td></tr><tr><td width=\"50%\">verifyStatus</td><td width=\"50%\">认证状态（0＝未认证 1=已认证）</td></tr><tr><td width=\"50%\">verifyTime</td><td width=\"50%\">认证时间</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">updateTime</td><td width=\"50%\">更新时间</td></tr><tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr><tr><td width=\"50%\">proId</td><td width=\"50%\">省份Id</td></tr><tr><td width=\"50%\">cityId</td><td width=\"50%\">城市Id</td></tr><tr><td width=\"50%\">areaId</td><td width=\"50%\">区域Id</td></tr>
+
+</td></tr></tbody></table>")
+
+
+
+//健康数据
+data=
+{\"uId\":\"1\",\"apIp\":\"11\",\"devSn\":\"111\",\"devId\":\"1111\",\"dataSource\":\"1111\",\"type\":\"1\",\"data\":{}}" + "
+||{\"status\":\"success\",\"msg\":\"健康数据采集成功!\"}" + 
+"||{\"status\":\"fail\",\"msg\":\"健康数据采集失败，请检查传入参数!\"}" + 
+"||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead>
+<tbody> 
+<tr><td width=\"25%\">uId</td><td width=\"25%\">是</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"25%\">apIp</td><td width=\"25%\">是</td><td width=\"50%\">运营商id</td></tr>
+<tr><td width=\"25%\">devSn</td><td width=\"25%\">是</td><td width=\"50%\">设备号</td></tr>
+<tr><td width=\"25%\">devId</td><td width=\"25%\">是</td><td width=\"50%\">设备ID</td></tr>
+<tr><td width=\"25%\">dataSource</td><td width=\"25%\">是</td><td width=\"50%\">数据来源</td></tr>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">数据类型【1：血压数据；2：血糖数据；3：血氧数据；4：人体数据；5：胆固醇数据;6：心电异常数据;7：心电数据；8：计步器数据；9：睡眠数据；10：体温数据；11：血尿酸数据；
+12：血尿数据；13：体重数据；14：血压批量数据；15：血糖批量数据；16：血氧批量数据；17：人体批量数据；18：胆固醇批量数据；19：心电异常数据批量：20：心电数据批量；21：计步器数据批量；22：睡眠数据批量；23：体温数据批量；24：血尿酸数据批量；25：血尿数据批量；26：体重数据批量】</td></tr>
+<tr><td width=\"25%\">data</td><td width=\"25%\">是</td><td width=\"50%\">数据【单数数据传map，多条数据传集合list】</td></tr>
+</td></tr></tbody></table>" + 
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=1/14|血压数据/血压批量数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">systolic</td><td width=\"25%\">否</td><td width=\"50%\">收缩压</td></tr><tr><td width=\"25%\">diastolic</td><td width=\"25%\">否</td><td width=\"50%\">舒张压</td></tr><tr><td width=\"25%\">pulse</td><td width=\"25%\">否</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=2/15|血糖数据/血糖批量数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">bloodsugar</td><td width=\"25%\">否</td><td width=\"50%\">血糖值，单位：mmol/L</td></tr><tr><td width=\"25%\">type</td><td width=\"25%\">否</td><td width=\"50%\">1空腹，2餐前，3餐后</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=3/16|血氧数据/血氧批量数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">bloodoxygen</td><td width=\"25%\">否</td><td width=\"50%\">血氧</td></tr><tr><td width=\"25%\">pulse</td><td width=\"25%\">否</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=4/17|人体数据/人体批量数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">muscle</td><td width=\"25%\">否</td><td width=\"50%\">肌肉量</td></tr><tr><td width=\"25%\">adiposerate</td><td width=\"25%\">否</td><td width=\"50%\">脂肪率</td></tr><tr><td width=\"25%\">visceralfat</td><td width=\"25%\">否</td><td width=\"50%\">内脏脂肪</td></tr><tr><td width=\"25%\">moisture</td><td width=\"25%\">否</td><td width=\"50%\">人体水分</td></tr><tr><td width=\"25%\">bone</td><td width=\"25%\">否</td><td width=\"50%\">骨量</td></tr><tr><td width=\"25%\">thermal</td><td width=\"25%\">否</td><td width=\"50%\">热量</td></tr><tr><td width=\"25%\">basalMetabolism</td><td width=\"25%\">否</td><td width=\"50%\">基础代谢</td></tr><tr><td width=\"25%\">metabolism</td><td width=\"25%\">否</td><td width=\"50%\">新陈代谢</td></tr><tr><td width=\"25%\">bmi</td><td width=\"25%\">否</td><td width=\"50%\">BMI</td></tr><tr><td width=\"25%\">impedance</td><td width=\"25%\">否</td><td width=\"50%\">阻抗</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=5/18|胆固醇数据/胆固醇批量数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">cholesterol</td><td width=\"25%\">否</td><td width=\"50%\">胆固醇</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=6/19|心电异常数据/心电异常数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">pulse</td><td width=\"25%\">否</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"25%\">startTime</td><td width=\"25%\">否</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"25%\">endTime</td><td width=\"25%\">否</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"25%\">ecg</td><td width=\"25%\">否</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"25%\">alertInfo</td><td width=\"25%\">否</td><td width=\"50%\">报警信息</td></tr><tr><td width=\"25%\">hr</td><td width=\"25%\">否</td><td width=\"50%\">心率值,逗号分隔字符串</td></tr><tr><td width=\"25%\">st1</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">st2</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">pvcs</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">rr</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"25%\">endTime</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=7/20|心电数据/心电数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">pulse</td><td width=\"25%\">否</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"25%\">startTime</td><td width=\"25%\">否</td><td width=\"50%\">开始时间</td></tr><tr><td width=\"25%\">endTime</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr><tr><td width=\"25%\">ecg</td><td width=\"25%\">否</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"25%\">hr</td><td width=\"25%\">否</td><td width=\"50%\">心率值，逗号分隔字符串</td></tr><tr><td width=\"25%\">st1</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">st2</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">pvcs</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">rr</td><td width=\"25%\">否</td><td width=\"50%\"></td></tr><tr><td width=\"25%\">dlMethod</td><td width=\"25%\">否</td><td width=\"50%\">导联方式</td></tr><tr><td width=\"25%\">zy</td><td width=\"25%\">否</td><td width=\"50%\">增益</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"25%\">endTime</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=8/21|计步器数据/计步器数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">steps</td><td width=\"25%\">否</td><td width=\"50%\">步数</td></tr><tr><td width=\"25%\">kilometres</td><td width=\"25%\">否</td><td width=\"50%\">距离</td></tr><tr><td width=\"25%\">caloric</td><td width=\"25%\">否</td><td width=\"50%\">卡路里</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=9/22|睡眠数据/睡眠数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"25%\">endTime</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=10/23|体温数据/体温数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">temperature</td><td width=\"25%\">否</td><td width=\"50%\">体温，单位：摄氏度</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=11/24|血尿酸数据/血尿酸数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">uricacid</td><td width=\"25%\">否</td><td width=\"50%\">血尿酸</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=12/25血尿数据|/血尿数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">leu</td><td width=\"25%\">否</td><td width=\"50%\">白细胞</td></tr><tr><td width=\"25%\">nit</td><td width=\"25%\">否</td><td width=\"50%\">亚硝酸盐</td></tr><tr><td width=\"25%\">ubg</td><td width=\"25%\">否</td><td width=\"50%\">尿胆原</td></tr><tr><td width=\"25%\">pro</td><td width=\"25%\">否</td><td width=\"50%\">蛋白质</td></tr><tr><td width=\"25%\">ph</td><td width=\"25%\">否</td><td width=\"50%\">PH</td></tr><tr><td width=\"25%\">bld</td><td width=\"25%\">否</td><td width=\"50%\">潜血</td></tr><tr><td width=\"25%\">sg</td><td width=\"25%\">否</td><td width=\"50%\">比重</td></tr><tr><td width=\"25%\">ket</td><td width=\"25%\">否</td><td width=\"50%\">酮体</td></tr><tr><td width=\"25%\">bil</td><td width=\"25%\">否</td><td width=\"50%\">胆红素</td></tr><tr><td width=\"25%\">glu</td><td width=\"25%\">否</td><td width=\"50%\">葡萄糖</td></tr><tr><td width=\"25%\">vc</td><td width=\"25%\">否</td><td width=\"50%\">维生素C</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type=13/26体重数据|/体重数据批量</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重</td></tr><tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"25%\">waistline</td><td width=\"25%\">否</td><td width=\"50%\">腰围</td></tr></td></tr></tbody></table>
+"||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead>
+<tbody> 
+<tr><td width=\"50%\">status</td><td width=\"50%\">结果：<br>success:健康数据采集成功<br/>fail：健康数据采集失败，请检查传入参数!</td></tr> 
+</tbody></table>
+
+
+//会员列表数据查询
+data={\"pocId\":\"\"}" + 
+"||{\"status\":\"success\",\"data\":[],\"msg\":\"查询成功!\"}" +
+ "||{\"status\":\"fail\",\"msg\":\"查询失败!\"}" + 
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+ <tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">区域Id</td></tr>
+ <tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">注册时间开始</td></tr>
+ <tr><td width=\"25%\">createTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">注册时间结束</td></tr>
+ <tr><td width=\"25%\">birthdayTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">出生日期开始</td></tr>
+ <tr><td width=\"25%\">birthdayTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">出生日期</td></tr>
+ <tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">当前页</td></tr>
+ <tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">每页数据</td></tr>
+ <tr><td width=\"25%\">order</td><td width=\"25%\">否</td><td width=\"50%\">排序 方式 0升序 1，降序</td></tr>
+ <tr><td width=\"25%\">orderColumn</td><td width=\"25%\">否</td><td width=\"50%\">排序字段  level 等级，createTime注册时间</td></tr>
+ <tr><td width=\"25%\">uId</td><td width=\"25%\">否</td><td width=\"50%\">主键</td></tr>
+ <tr><td width=\"25%\">username</td><td width=\"25%\">否</td><td width=\"50%\">用户名</td></tr>
+ <tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">手机号</td></tr>
+ <tr><td width=\"25%\">cityId</td><td width=\"25%\">否</td><td width=\"50%\">城市id</td></tr>
+ <tr><td width=\"25%\">proId</td><td width=\"25%\">否</td><td width=\"50%\">省id</td></tr>
+ <tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别0男1女2未知</td></tr>
+ <tr><td width=\"25%\">personName</td><td width=\"25%\">否</td><td width=\"50%\">用户姓名</td></tr>
+ <tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">php_邮箱</td></tr>
+ <tr><td width=\"25%\">allergicReaction</td><td width=\"25%\">否</td><td width=\"50%\">过敏反应</td></tr>
+ <tr><td width=\"25%\">nickName</td><td width=\"25%\">否</td><td width=\"50%\">昵称</td></tr>
+ <tr><td width=\"25%\">bloodType</td><td width=\"25%\">否</td><td width=\"50%\">血型</td></tr>
+ <tr><td width=\"25%\">chronic</td><td width=\"25%\">否</td><td width=\"50%\">慢性病</td></tr>
+ <tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高</td></tr>
+ <tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重</td></tr>
+ <tr><td width=\"25%\">addressDetail</td><td width=\"25%\">否</td><td width=\"50%\">详细地址</td></tr>
+ <tr><td width=\"25%\">idcardNo</td><td width=\"25%\">否</td><td width=\"50%\">身份证号</td></tr>
+ <tr><td width=\"25%\">levelId</td><td width=\"25%\">否</td><td width=\"50%\">等级Id</td></tr>
+ <tr><td width=\"25%\">points</td><td width=\"25%\">否</td><td width=\"50%\">会员积分</td></tr>
+ <tr><td width=\"25%\">areaId</td><td width=\"25%\">否</td><td width=\"50%\">区域Id</td></tr>
+ 
+ </td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">pId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">username</td><td width=\"50%\">用户名</td></tr><tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr><tr><td width=\"50%\">sign</td><td width=\"50%\">个性签名</td></tr><tr><td width=\"50%\">iId</td><td width=\"50%\">头像</td></tr><tr><td width=\"50%\">attNum</td><td width=\"50%\">关注的医生</td></tr><tr><td width=\"50%\">actNum</td><td width=\"50%\">收藏的活动</td></tr><tr><td width=\"50%\">footNum</td><td width=\"50%\">足迹数</td></tr><tr><td width=\"50%\">rest</td><td width=\"50%\">账户余额</td></tr><tr><td width=\"50%\">userPwd</td><td width=\"50%\">用户密码</td></tr><tr><td width=\"50%\">userPic</td><td width=\"50%\">用户头像</td></tr><tr><td width=\"50%\">keyValue</td><td width=\"50%\">登录系统的key值</td></tr><tr><td width=\"50%\">phoneCheck</td><td width=\"50%\">手机号码是否已验证,0=未验证,1=已验证</td></tr><tr><td width=\"50%\">hxFlag</td><td width=\"50%\">是否成功注册环信账号，0未注册；1已经注册</td></tr><tr><td width=\"50%\">createUserid</td><td width=\"50%\">创建人</td></tr><tr><td width=\"50%\">saleUserid</td><td width=\"50%\">销售人员</td></tr><tr><td width=\"50%\">saleType</td><td width=\"50%\">销售人员类别：0，患者，1，医生,2,运营</td></tr><tr><td width=\"50%\">formAddress</td><td width=\"50%\">数据来源，0从pc端注册，1从手机端注册,2-倍泰,3-医敬TOWN注册</td></tr><tr><td width=\"50%\">availableAmount</td><td width=\"50%\">可用金额</td></tr><tr><td width=\"50%\">totalAmount</td><td width=\"50%\">总金额</td></tr><tr><td width=\"50%\">freezeAmount</td><td width=\"50%\">冻结金额</td></tr><tr><td width=\"50%\">orgId</td><td width=\"50%\">推荐企业</td></tr><tr><td width=\"50%\">docId</td><td width=\"50%\">推荐专家</td></tr><tr><td width=\"50%\">hosId</td><td width=\"50%\">推荐机构</td></tr><tr><td width=\"50%\">olduserId</td><td width=\"50%\">一期的用户ID</td></tr><tr><td width=\"50%\">oldcityId</td><td width=\"50%\">一期城市id</td></tr><tr><td width=\"50%\">oldproId</td><td width=\"50%\">一期省id</td></tr><tr><td width=\"50%\">cityId</td><td width=\"50%\">城市id</td></tr><tr><td width=\"50%\">proId</td><td width=\"50%\">省id</td></tr><tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女2未知</td></tr><tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr><tr><td width=\"50%\">email</td><td width=\"50%\">php_邮箱</td></tr><tr><td width=\"50%\">birthday</td><td width=\"50%\">php_生日</td></tr><tr><td width=\"50%\">circleTage</td><td width=\"50%\">圈子标签</td></tr><tr><td width=\"50%\">userNum</td><td width=\"50%\">我的好友</td></tr><tr><td width=\"50%\">conNum</td><td width=\"50%\">帖子数</td></tr><tr><td width=\"50%\">allergicReaction</td><td width=\"50%\">过敏反应</td></tr><tr><td width=\"50%\">nickName</td><td width=\"50%\">昵称</td></tr><tr><td width=\"50%\">bloodType</td><td width=\"50%\">血型</td></tr><tr><td width=\"50%\">chronic</td><td width=\"50%\">慢性病</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr><tr><td width=\"50%\">addressDetail</td><td width=\"50%\">详细地址</td></tr><tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr><tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr><tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr><tr><td width=\"50%\">isDel</td><td width=\"50%\">逻辑删除（0＝否 1=是）</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">数据创建时间</td></tr><tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr><tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr><tr><td width=\"50%\">site</td><td width=\"50%\">常驻地区</td></tr><tr><td width=\"50%\">tableId</td><td width=\"50%\">表ID</td></tr><tr><td width=\"50%\">rowId</td><td width=\"50%\">行记录ID</td></tr><tr><td width=\"50%\">levelId</td><td width=\"50%\">等级Id</td></tr><tr><td width=\"50%\">points</td><td width=\"50%\">会员积分</td></tr><tr><td width=\"50%\">telephone</td><td width=\"50%\">固定电话</td></tr><tr><td width=\"50%\">areaId</td><td width=\"50%\">区域Id</td></tr>
+ <tr><td width=\"50%\">pocId</td><td width=\"50%\">pocId</td></tr>
+ <tr><td width=\"50%\">pocName</td><td width=\"50%\">poc名称</td></tr>
+ <tr><td width=\"50%\">id</td><td width=\"50%\">关联id</td></tr>
+ <tr><td width=\"50%\">levelName</td><td width=\"50%\">等级名称</td></tr><tr><td width=\"50%\">proName</td><td width=\"50%\">省份</td></tr><tr><td width=\"50%\">areaName</td><td width=\"50%\">地区</td></tr><tr><td width=\"50%\">cityName</td><td width=\"50%\">城市</td></tr><tr><td width=\"50%\">discount</td><td width=\"50%\">折扣</td></tr></tbody></table>
+
+
+//查询健康数据
+ data=<br/>{\"type\":\"3\"}
+||{\"status\":\"success\",\"data\":[],\"msg\":\"血压数据查询成功！\"}
+||{\"status\":\"fail\",\"msg\":\"血压数据查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr>
+</td></tr><tr><td width=\"25%\">timeType</td><td width=\"25%\">否</td><td width=\"50%\">时间范围类型：timeType：<br/>all-全部<br/>week-周<br/>month-月<br/>day-天<br/>year-年<br/>thismonth-当前月【默认】</td></tr>
+<tr><td width=\"25%\">timeNum</td><td width=\"25%\">否</td><td width=\"50%\">timeNum-时间大小，默认为1【demo：最近3个月  timeType:month  timeNum = 3】</td></tr>
+<tr><td width=\"25%\">timeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间 时间类型 demo 2015-12-12 12:12:12</td></tr>
+<tr><td width=\"25%\">timeEnd</td><td width=\"25%\">否</td><td width=\"50%\">查询结束时间 时间类型 demo 2015-12-12 12:12:12</td></tr>
+<tr><td width=\"25%\">uId</td><td width=\"25%\">否</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"25%\">apId</td><td width=\"25%\">否</td><td width=\"50%\">运营商id</td></tr>
+<tr><td width=\"25%\">devSn</td><td width=\"25%\">否</td><td width=\"50%\">设备号</td></tr>
+<tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"25%\">dataSource</td><td width=\"25%\">否</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">当前页[默认1]</td></tr><tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">每页数据【默认15】</td></tr><tr><td width=\"25%\">order</td><td width=\"25%\">否</td><td width=\"50%\">0 -降序  1-升序 默认降序(创建时间)</td></tr></td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血压返回数据：type=1</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">systolic</td><td width=\"50%\">收缩压</td></tr><tr><td width=\"50%\">diastolic</td><td width=\"50%\">舒张压</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血糖返回数据：type=2</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodsugar</td><td width=\"50%\">血糖值，单位：mmol/L</td></tr><tr><td width=\"50%\">type</td><td width=\"50%\">1空腹，2餐前，3餐后</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血氧返回数据：type=3</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodoxygen</td><td width=\"50%\">血氧</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">人体数据返回数据：type=4</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">muscle</td><td width=\"50%\">肌肉量</td></tr><tr><td width=\"50%\">adiposerate</td><td width=\"50%\">脂肪率</td></tr><tr><td width=\"50%\">visceralfat</td><td width=\"50%\">内脏脂肪</td></tr><tr><td width=\"50%\">moisture</td><td width=\"50%\">人体水分</td></tr><tr><td width=\"50%\">bone</td><td width=\"50%\">骨量</td></tr><tr><td width=\"50%\">thermal</td><td width=\"50%\">热量</td></tr><tr><td width=\"50%\">basalMetabolism</td><td width=\"50%\">基础代谢</td></tr><tr><td width=\"50%\">metabolism</td><td width=\"50%\">新陈代谢</td></tr><tr><td width=\"50%\">bmi</td><td width=\"50%\">BMI</td></tr><tr><td width=\"50%\">impedance</td><td width=\"50%\">阻抗</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">胆固醇返回数据：type=5</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">cholesterol</td><td width=\"50%\">胆固醇</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">心电异常返回数据：type=6</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">exceptionStartTime</td><td width=\"50%\">异常开始时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">exceptionEndTime</td><td width=\"50%\">异常结束时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">alertInfo</td><td width=\"50%\">报警信息</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值,逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">心电返回数据：type=7</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值，逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">dlMethod</td><td width=\"50%\">导联方式</td></tr><tr><td width=\"50%\">zy</td><td width=\"50%\">增益</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">计步器返回数据：type=8</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">steps</td><td width=\"50%\">步数</td></tr><tr><td width=\"50%\">kilometres</td><td width=\"50%\">距离</td></tr><tr><td width=\"50%\">caloric</td><td width=\"50%\">卡路里</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">睡眠返回数据：type=9</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">sleep</td><td width=\"50%\">睡眠数据，Base64编码</td></tr><tr><td width=\"50%\">medicId</td><td width=\"50%\">医生id</td></tr><tr><td width=\"50%\">spo2</td><td width=\"50%\">血血氧饱和度，逗号分隔字符串</td></tr><tr><td width=\"50%\">pr</td><td width=\"50%\">脉搏，逗号分隔字符串</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">体温返回数据：type=10</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">temperature</td><td width=\"50%\">体温，单位：摄氏度</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血尿酸返回数据：type=11</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">uricacid</td><td width=\"50%\">血尿酸</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血尿返回数据：type=12</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">leu</td><td width=\"50%\">白细胞</td></tr><tr><td width=\"50%\">nit</td><td width=\"50%\">亚硝酸盐</td></tr><tr><td width=\"50%\">ubg</td><td width=\"50%\">尿胆原</td></tr><tr><td width=\"50%\">pro</td><td width=\"50%\">蛋白质</td></tr><tr><td width=\"50%\">ph</td><td width=\"50%\">PH</td></tr><tr><td width=\"50%\">bld</td><td width=\"50%\">潜血</td></tr><tr><td width=\"50%\">sg</td><td width=\"50%\">比重</td></tr><tr><td width=\"50%\">ket</td><td width=\"50%\">酮体</td></tr><tr><td width=\"50%\">bil</td><td width=\"50%\">胆红素</td></tr><tr><td width=\"50%\">glu</td><td width=\"50%\">葡萄糖</td></tr><tr><td width=\"50%\">vc</td><td width=\"50%\">维生素C</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">体重返回数据：type=13</th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">waistline</td><td width=\"50%\">腰围</td></tr><tr><td width=\"50%\">weightIndex</td><td width=\"50%\">体重指数</td></tr></tbody></table>
+
+
+data={\"pn\":\"111\",\"dataSource\":\"111\",\"routerMac\":\"1111\",\"devSn\":\"111\",\"type\":\"1\",\"data\":{\"limosisValue\": \"78\",\"dataTime\": \"2014-08-26 15:15:00 \",\"beforeMealsValue\": \"78\", \"afterMealValue\": \"78\"}}" + 
+||{\"status\":\"success\",\"msg\":\"健康数据采集成功!\"}" + 
+"||{\"status\":\"fail\",\"msg\":\"健康数据采集失败，请检查传入参数!\"}" +  
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+ <tr><td width=\"25%\">pn</td><td width=\"25%\">是</td><td width=\"50%\">宜家安个人编码</td></tr>
+<tr><td width=\"25%\">routerMac</td><td width=\"25%\">否</td><td width=\"50%\">数据通mac</td></tr>
+<tr><td width=\"25%\">devSn</td><td width=\"25%\">是</td><td width=\"50%\">设备号</td></tr>
+<tr><td width=\"25%\">dataSource</td><td width=\"25%\">是</td><td width=\"50%\">数据来源</td></tr>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">数据类型【1：用户注册数据；2：血糖数据；3：心率数据；4：手表步数；5：血压数据】</td></tr>
+ </td></tr></tbody></table>" +
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 1:用户注册数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">userName</td><td width=\"25%\">否</td><td width=\"50%\">用户姓名</td></tr><tr><td width=\"25%\">idcardNo</td><td width=\"25%\">否</td><td width=\"50%\">身份证号</td></tr><tr><td width=\"25%\">idcardChip</td><td width=\"25%\">否</td><td width=\"50%\">身份证芯片id</td></tr><tr><td width=\"25%\">phoneNo</td><td width=\"25%\">否</td><td width=\"50%\">联系电话</td></tr><tr><td width=\"25%\">homeTelephone</td><td width=\"25%\">否</td><td width=\"50%\">家庭电话</td></tr><tr><td width=\"25%\">email</td><td width=\"25%\">否</td><td width=\"50%\">邮箱</td></tr><tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别</td></tr><tr><td width=\"25%\">bloodType</td><td width=\"25%\">否</td><td width=\"50%\">血型</td></tr><tr><td width=\"25%\">birthdayTime</td><td width=\"25%\">否</td><td width=\"50%\">生日</td></tr><tr><td width=\"25%\">height</td><td width=\"25%\">否</td><td width=\"50%\">身高</td></tr><tr><td width=\"25%\">waist</td><td width=\"25%\">否</td><td width=\"50%\">腰围</td></tr><tr><td width=\"25%\">weight</td><td width=\"25%\">否</td><td width=\"50%\">体重</td></tr><tr><td width=\"25%\">contacts</td><td width=\"25%\">否</td><td width=\"50%\">联系人</td></tr><tr><td width=\"25%\">contactsPhone</td><td width=\"25%\">否</td><td width=\"50%\">联系人电话</td></tr><tr><td width=\"25%\">relationship</td><td width=\"25%\">否</td><td width=\"50%\">联系人关系</td></tr><tr><td width=\"25%\">diseasesHistory</td><td width=\"25%\">否</td><td width=\"50%\">疾病史</td></tr><tr><td width=\"25%\">contactAddress</td><td width=\"25%\">否</td><td width=\"50%\">详细地址</td></tr><tr><td width=\"25%\">geoX</td><td width=\"25%\">否</td><td width=\"50%\">经度</td></tr><tr><td width=\"25%\">geoY</td><td width=\"25%\">否</td><td width=\"50%\">纬度</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">用户注册获取时间</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 2:血糖数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">limosisValue</td><td width=\"25%\">否</td><td width=\"50%\">空腹值</td></tr><tr><td width=\"25%\">beforeMealsValue</td><td width=\"25%\">否</td><td width=\"50%\">饭前值</td></tr><tr><td width=\"25%\">afterMealValue</td><td width=\"25%\">否</td><td width=\"50%\">饭后值</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">获取血糖日期</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 3:血糖数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody>  <tr><td width=\"25%\">cshrValue</td><td width=\"25%\">否</td><td width=\"50%\">心率值</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">获取心率日期</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 4:手表步数</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">calorie</td><td width=\"25%\">否</td><td width=\"50%\">卡路里</td></tr><tr><td width=\"25%\">steps</td><td width=\"25%\">否</td><td width=\"50%\">步数</td></tr><tr><td width=\"25%\">dataTime</td><td width=\"25%\">否</td><td width=\"50%\">计步器数据获取时间</td></tr><tr><td width=\"25%\">distance</td><td width=\"25%\">否</td><td width=\"50%\">距离</td></tr></td></tr></tbody></table>
+<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 5:血压数据</th><th scope=\"col\"></th><th scope=\"col\"></th></tr></thead><tbody> <tr><td width=\"25%\">highValue</td><td width=\"25%\">否</td><td width=\"50%\">高压</td></tr><tr><td width=\"25%\">lowValue</td><td width=\"25%\">否</td><td width=\"50%\">低压</td></tr></td></tr></tbody></table>
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead>
+<tbody> 
+<tr><td width=\"50%\">status</td><td width=\"50%\">结果：<br>success:健康数据采集成功<br/>fail：健康数据采集失败，请检查传入参数!</td></tr> 
+</tbody></table>
+
+
+
+//通过场次Id 查询球场信息
+data={\"rondaId\":\"\"}" + "||{\"status\":\"success\",\"data\":\"\",\"result\":\"200\",\"msg\":\"xxx成功!\"}" + "||{\"status\":\"fail\",\"data\":\"400/503\",\"msg\":\"xxx失败/服务器异常!\"}" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"25%\">rondaId</td><td width=\"25%\">是</td><td width=\"50%\">主键</td></tr></td></tr></tbody></table>" + 
+"||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">rondaId</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">memberId</td><td width=\"50%\">会员Id</td></tr>
+<tr><td width=\"50%\">courtId</td><td width=\"50%\">球场ID</td></tr>
+<tr><td width=\"50%\">courtName</td><td width=\"50%\">球场名称</td></tr>
+<tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间</td></tr>
+<tr><td width=\"50%\">linkman</td><td width=\"50%\">联系人</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">联系人电话</td></tr>
+<tr><td width=\"50%\">seatSum</td><td width=\"50%\">席位(总数)</td></tr>
+<tr><td width=\"50%\">seatPaid</td><td width=\"50%\">预定席位（已支付后的席位）</td></tr>
+<tr><td width=\"50%\">seatLock</td><td width=\"50%\">席位锁定数</td></tr>
+<tr><td width=\"50%\">price</td><td width=\"50%\">球场价格</td></tr>
+<tr><td width=\"50%\">collateral</td><td width=\"50%\">押金</td></tr>
+<tr><td width=\"50%\">status</td><td width=\"50%\">状态</td></tr>
+<tr><td width=\"50%\">isRelease</td><td width=\"50%\">是否发布(0:否，1：是)</td></tr>
+<tr><td width=\"50%\">collateralStatus</td><td width=\"50%\">押金状态（0:在押，1:返回）</td></tr>
+<tr><td width=\"50%\">releaseTime</td><td width=\"50%\">发布时间</td></tr>
+<tr><td width=\"50%\">vip</td><td width=\"50%\">是否会员专享（0-否；1-是）</td></tr>
+<tr><td width=\"50%\">stick</td><td width=\"50%\">是否置顶（0-否；1-是）</td></tr>
+<tr><td width=\"50%\">remark</td><td width=\"50%\">备注</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">创建日期</td></tr>
+<tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr>
+<tr><td width=\"50%\">address</td><td width=\"50%\">球场地址</td></tr>
+<tr><td width=\"50%\">geoX</td><td width=\"50%\">经度</td></tr>
+<tr><td width=\"50%\">geoY</td><td width=\"50%\">纬度</td></tr>
+<tr><td width=\"50%\">title</td><td width=\"50%\">标题</td></tr>
+<tr><td width=\"50%\">rondaImg</td><td width=\"50%\">场次照片</td></tr>
+<tr><td width=\"50%\">seatSurplus</td><td width=\"50%\">剩余席位</td></tr>
+<tr><td width=\"50%\">prepay</td><td width=\"50%\">预付</td></tr>
+<tr><td width=\"50%\">reachpay</td><td width=\"50%\">到付</td></tr>
+<tr><td width=\"50%\">address</td><td width=\"50%\">球场地址</td></tr>
+<tr><td width=\"50%\">info</td><td width=\"50%\">球场简介</td></tr>
+<tr><td width=\"50%\">courseImg</td><td width=\"50%\">球场图片</td></tr>
+<tr><td width=\"50%\">operatingHours</td><td width=\"50%\">营业开始时间</td></tr>
+<tr><td width=\"50%\">endTime</td><td width=\"50%\">营业关闭时间</td></tr>
+<tr><td width=\"50%\">telephone</td><td width=\"50%\">球场电话</td></tr>
+<tr><td width=\"50%\">qrCode</td><td width=\"50%\">二维码图片</td></tr>
+<tr><td width=\"50%\">length</td><td width=\"50%\">球场长度</td></tr>
+<tr><td width=\"50%\">width</td><td width=\"50%\">球场宽度</td></tr>
+<tr><td width=\"50%\">shape</td><td width=\"50%\">球场地型图</td></tr>
+<tr><td width=\"50%\">logo</td><td width=\"50%\">球场logo</td></tr>
+<tr><td width=\"50%\">acreage</td><td width=\"50%\">球场面积</td></tr>
+<tr><td width=\"50%\">style</td><td width=\"50%\">球场风格</td></tr>
+<tr><td width=\"50%\">isOpening</td><td width=\"50%\">是否开放（0-所有人，1-封场，2-对会员开放）</td></tr>
+<tr><td width=\"50%\">holes</td><td width=\"50%\">球场洞数</td></tr>
+<tr><td width=\"50%\">siteNumber</td><td width=\"50%\">球场场地数</td></tr>
+<tr><td width=\"50%\">proId</td><td width=\"50%\">省份ID</td></tr>
+<tr><td width=\"50%\">cityId</td><td width=\"50%\">城市Id</td></tr>
+<tr><td width=\"50%\">areaId</td><td width=\"50%\">区域ID</td></tr>
+<tr><td width=\"50%\">memberPrice</td><td width=\"50%\">会员价格</td></tr>
+<tr><td width=\"50%\">originalPrice</td><td width=\"50%\">原价</td></tr>
+<tr><td width=\"50%\">foundingTime</td><td width=\"50%\">创建时间</td></tr>
+<tr><td width=\"50%\">fairwayLength</td><td width=\"50%\">球道全长</td></tr>
+<tr><td width=\"50%\">fairwayGrass</td><td width=\"50%\">球道草种</td></tr>
+<tr><td width=\"50%\">reenGrass</td><td width=\"50%\">果岭草种</td></tr>
+
+</tbody></table>
+
+//球场分页查询
+data={\"memberId\":\"\"}" + "||{\"status\":\"success\",\"data\":\"\",\"result\":\"200\",\"msg\":\"xxx成功!\"}" + "||{\"status\":\"fail\",\"data\":\"400/503\",\"msg\":\"xxx失败/服务器异常!\"}" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"25%\">memberId</td><td width=\"25%\">是</td><td width=\"50%\">会员Id</td></tr>
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">当前页</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">每页数据</td></tr>
+</td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">orderId</td><td width=\"50%\">订单主键</td></tr><tr><td width=\"50%\">orderNo</td><td width=\"50%\">订单编号</td></tr><tr><td width=\"50%\">rondaId</td><td width=\"50%\">场次ID</td></tr><tr><td width=\"50%\">memberId</td><td width=\"50%\">会员Id</td></tr><tr><td width=\"50%\">orderType</td><td width=\"50%\">订单类型(0-充值;1-支付订单；2-买单)</td></tr><tr><td width=\"50%\">amount</td><td width=\"50%\">订单总额</td></tr><tr><td width=\"50%\">seatNum</td><td width=\"50%\">席位数</td></tr><tr><td width=\"50%\">status</td><td width=\"50%\">订单状态（0=已取消 ，1=待支付 ，2=已支付， 3=已发货, 4=订单完成  ）</td></tr><tr><td width=\"50%\">expiryTime</td><td width=\"50%\">失效时间</td></tr><tr><td width=\"50%\">isDel</td><td width=\"50%\">is_del 逻辑删除（0＝否 1=是）</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建日期</td></tr><tr><td width=\"50%\">updateTime</td><td width=\"50%\">数据修改时间</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">活动时间</td></tr><tr><td width=\"50%\">prepay</td><td width=\"50%\">预付</td></tr><tr><td width=\"50%\">reachpay</td><td width=\"50%\">到付</td></tr><tr><td width=\"50%\">linkman</td><td width=\"50%\">联系人</td></tr><tr><td width=\"50%\">linkmanPhone</td><td width=\"50%\">联系人电话</td></tr><tr><td width=\"50%\">remark</td><td width=\"50%\">备注</td></tr><tr><td width=\"50%\">courtId</td><td width=\"50%\">球场主键</td></tr><tr><td width=\"50%\">courtName</td><td width=\"50%\">球场名称</td></tr><tr><td width=\"50%\">title</td><td width=\"50%\">标题</td></tr><tr><td width=\"50%\">seatSum</td><td width=\"50%\">席位(总数)</td></tr></tbody></table>
+
+删除招聘数据
+data={\"id\":\"xxxxxxx\"}" + "
+||{\"status\":\"success\",\"resultc_code\":\"200\",\"msg\":\"删除成功！\"}
+||{\"status\":\"fail\",\"resultc_code\":\"400/503\",\"msg\":\"删除失败！服务期异常\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">" + "是否必须</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"25%\">id</td><td width=\"25%\">是</td><td width=\"50%\">招聘信息主键【单条数据删除：demo：｛id：""｝，批量删除demo：｛id："xxx,xxx,xxx"｝】</td></tr>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">status</td><td width=\"50%\">删除结果：<br>success:删除成功<br/>fail：删除失败</td></tr> 
+</td></tr></tbody></table>")
+
+//获取最近一条健康数据
+data={\"uId\":\"xxxx\",\"type\":\"2,3\"}" + 
+"||{\"status\":\"success\",\"data\":{},\"result_code\":\"200\",\"msg\":\"操作成功!\"}" +
+ "||{\"status\":\"fail\",\"result_code\":\"400/503\",\"msg\":\"xxxxxx失败!/服务器异常\"}" + 
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody>
+ <tr><td width=\"25%\">uId</td><td width=\"25%\">否</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr>
+ </td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+ <tr><td width=\"50%\">healthBloodPressure</td><td width=\"50%\">血压数据</td></tr>
+ <tr><td width=\"50%\">healthBloodSuga</td><td width=\"50%\">血糖数据</td></tr>
+ <tr><td width=\"50%\">healthBloodOxygen</td><td width=\"50%\">血氧数据</td></tr>
+ <tr><td width=\"50%\">healthBody</td><td width=\"50%\">人体数据</td></tr>
+ <tr><td width=\"50%\">healthCholesterol</td><td width=\"50%\">胆固醇数据</td></tr>
+ <tr><td width=\"50%\">healthEcgAbnormality</td><td width=\"50%\">心电异常数据</td></tr>
+ <tr><td width=\"50%\">healthEcg</td><td width=\"50%\">心电数据</td></tr>
+ <tr><td width=\"50%\">healthPedometer</td><td width=\"50%\">计步器数据</td></tr>
+ <tr><td width=\"50%\">healthSleep</td><td width=\"50%\">睡眠数据</td></tr>
+ <tr><td width=\"50%\">healthTemperature</td><td width=\"50%\">体温数据</td></tr>
+ <tr><td width=\"50%\">healthUricacid</td><td width=\"50%\">血尿酸数据</td></tr>
+ <tr><td width=\"50%\">healthUrine</td><td width=\"50%\">血尿数据</td></tr>
+ <tr><td width=\"50%\">healthWeight</td><td width=\"50%\">体重数据</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 1（key = healthBloodPressure）血压数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">systolic</td><td width=\"50%\">收缩压</td></tr><tr><td width=\"50%\">diastolic</td><td width=\"50%\">舒张压</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">fruit</td><td width=\"50%\">心率结果（0-心率不齐，1心率正常）</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 2（key = healthBloodSuga）血糖数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodsugar</td><td width=\"50%\">血糖值，单位：mmol/L</td></tr><tr><td width=\"50%\">type</td><td width=\"50%\">1空腹，2餐前，3餐后</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 3（key = healthBloodOxygen）血氧数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodoxygen</td><td width=\"50%\">血氧</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 4（key = healthBody）人体数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">muscle</td><td width=\"50%\">肌肉量</td></tr><tr><td width=\"50%\">adiposerate</td><td width=\"50%\">脂肪率</td></tr><tr><td width=\"50%\">visceralfat</td><td width=\"50%\">内脏脂肪</td></tr><tr><td width=\"50%\">moisture</td><td width=\"50%\">人体水分</td></tr><tr><td width=\"50%\">bone</td><td width=\"50%\">骨量</td></tr><tr><td width=\"50%\">thermal</td><td width=\"50%\">热量</td></tr><tr><td width=\"50%\">basalMetabolism</td><td width=\"50%\">基础代谢</td></tr><tr><td width=\"50%\">metabolism</td><td width=\"50%\">新陈代谢</td></tr><tr><td width=\"50%\">bmi</td><td width=\"50%\">BMI</td></tr><tr><td width=\"50%\">impedance</td><td width=\"50%\">阻抗</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 5（key = healthCholesterol）胆固醇数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">cholesterol</td><td width=\"50%\">胆固醇</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 6（key = healthEcgAbnormality）心电异常数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">exceptionStartTime</td><td width=\"50%\">异常开始时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">exceptionEndTime</td><td width=\"50%\">异常结束时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">alertInfo</td><td width=\"50%\">报警信息</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值,逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 7（key = healthEcg）心电数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值，逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">dlMethod</td><td width=\"50%\">导联方式</td></tr><tr><td width=\"50%\">zy</td><td width=\"50%\">增益</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 8（key = healthPedometer）计步器数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">steps</td><td width=\"50%\">步数</td></tr><tr><td width=\"50%\">kilometres</td><td width=\"50%\">距离</td></tr><tr><td width=\"50%\">caloric</td><td width=\"50%\">卡路里</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 9（key = healthSleep）睡眠数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">sleep</td><td width=\"50%\">睡眠数据，Base64编码</td></tr><tr><td width=\"50%\">medicId</td><td width=\"50%\">医生id</td></tr><tr><td width=\"50%\">spo2</td><td width=\"50%\">血血氧饱和度，逗号分隔字符串</td></tr><tr><td width=\"50%\">pr</td><td width=\"50%\">脉搏，逗号分隔字符串</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 10（key = healthTemperature）体温数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">temperature</td><td width=\"50%\">体温，单位：摄氏度</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 11（key = healthUricacid）血尿酸数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">uricacid</td><td width=\"50%\">血尿酸</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 12（key = healthUrine）血尿数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">leu</td><td width=\"50%\">白细胞</td></tr><tr><td width=\"50%\">nit</td><td width=\"50%\">亚硝酸盐</td></tr><tr><td width=\"50%\">ubg</td><td width=\"50%\">尿胆原</td></tr><tr><td width=\"50%\">pro</td><td width=\"50%\">蛋白质</td></tr><tr><td width=\"50%\">ph</td><td width=\"50%\">PH</td></tr><tr><td width=\"50%\">bld</td><td width=\"50%\">潜血</td></tr><tr><td width=\"50%\">sg</td><td width=\"50%\">比重</td></tr><tr><td width=\"50%\">ket</td><td width=\"50%\">酮体</td></tr><tr><td width=\"50%\">bil</td><td width=\"50%\">胆红素</td></tr><tr><td width=\"50%\">glu</td><td width=\"50%\">葡萄糖</td></tr><tr><td width=\"50%\">vc</td><td width=\"50%\">维生素C</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">type = 13（key = healthWeight）体重数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">waistline</td><td width=\"50%\">腰围</td></tr><tr><td width=\"50%\">weightIndex</td><td width=\"50%\">体重指数</td></tr></tbody></table>
+
+
+
+
+
+
+
+//健康数据统计数据
+data=<br/>{\"type\":\"3\"}
+||{\"status\":\"success\",\"result_code\":\"01\",\"data\":{},\"msg\":\"查询成功\"}
+||{\"status\":\"fail\",\"result_code\":\"00\",\"data\":\"00/41\",\"msg\":\"查询失败！/查询类型出错！\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr></td></tr>
+<tr><td width=\"25%\">timeType</td><td width=\"25%\">否</td><td width=\"50%\">时间范围类型：timeType：<br/>all-全部<br/>week-周<br/>month-月<br/>day-天<br/>year-年<br/>thismonth-当前月【默认】</td></tr>
+<tr><td width=\"25%\">timeNum</td><td width=\"25%\">否</td><td width=\"50%\">timeNum-时间大小，默认为1【demo：最近3个月  timeType:month  timeNum = 3】</td></tr><tr><td width=\"25%\">timeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间 时间类型 demo 2015-12-12 12:12:12</td></tr><tr><td width=\"25%\">timeEnd</td><td width=\"25%\">否</td><td width=\"50%\">查询结束时间 时间类型 demo 2015-12-12 12:12:12</td></tr>
+<tr><td width=\"25%\">uId</td><td width=\"25%\">否</td><td width=\"50%\">用户id</td></tr><tr><td width=\"25%\">apId</td><td width=\"25%\">否</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"25%\">devSn</td><td width=\"25%\">否</td><td width=\"50%\">设备号</td></tr><tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"25%\">dataSource</td><td width=\"25%\">否</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">当前页[默认1]</td></tr><tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">每页数据【默认15】</td></tr><tr><td width=\"25%\">order</td><td width=\"25%\">否</td><td width=\"50%\">0 -降序  1-升序 默认降序(创建时间)</td></tr><tr><td width=\"25%\">healthStatus</td><td width=\"25%\">否</td><td width=\"50%\">健康状态</td></tr></td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody></tbody></table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血压返回数据：type=1</th><th scope=\"col\"></th></tr></thead><tbody> 
+<tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+<tr><td width=\"50%\">systolicCount</td><td width=\"50%\">收缩压统计</td></tr>
+<tr><td width=\"50%\">systolicMax</td><td width=\"50%\">收缩压最大值</td></tr>
+<tr><td width=\"50%\">systolicMin</td><td width=\"50%\">收缩压最小值</td></tr>
+<tr><td width=\"50%\">diastolicCount</td><td width=\"50%\">舒张压统计</td></tr>
+<tr><td width=\"50%\">diastolicMax</td><td width=\"50%\">舒张压最大值</td></tr>
+<tr><td width=\"50%\">diastolicMin</td><td width=\"50%\">舒张压最小值</td></tr>
+<tr><td width=\"50%\">pulseCount</td><td width=\"50%\">脉搏统计</td></tr>
+<tr><td width=\"50%\">pulseMax</td><td width=\"50%\">脉搏最大值</td></tr>
+<tr><td width=\"50%\">pulseMin</td><td width=\"50%\">脉搏最小值</td></tr>
+</tbody>
+</table><table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血糖返回数据：type=2</th><th scope=\"col\"></th></tr></thead><tbody>
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"50%\">bloodsugarCount</td><td width=\"50%\">血糖值统计数</td></tr>
+ <tr><td width=\"50%\">bloodsugarMax</td><td width=\"50%\">血糖值最大值</td></tr>
+ <tr><td width=\"50%\">bloodsugarMin</td><td width=\"50%\">血糖值最小值</td></tr>
+ <tr><td width=\"50%\">healthStatus</td><td width=\"50%\">健康状态（0：餐后半小时,1:餐后1小时,2:餐后2小时,3:空腹(餐后3小时))</td></tr>
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血氧返回数据：type=3</th><th scope=\"col\"></th></tr></thead><tbody>
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"50%\">bloodoxygenCount</td><td width=\"50%\">血氧统计数</td></tr>
+ <tr><td width=\"50%\">bloodoxygenMax</td><td width=\"50%\">血氧最大值</td></tr>
+ <tr><td width=\"50%\">bloodoxygenMin</td><td width=\"50%\">血氧最小值</td></tr>
+ <tr><td width=\"50%\">pulseCount</td><td width=\"50%\">脉搏统计数</td></tr>
+ <tr><td width=\"50%\">pulseMax</td><td width=\"50%\">脉搏最大值</td></tr>
+ <tr><td width=\"50%\">pulseMin</td><td width=\"50%\">脉搏最小值</td></tr>
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">人体数据返回数据：type=4</th><th scope=\"col\"></th></tr></thead><tbody>
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">胆固醇返回数据：type=5</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">心电异常返回数据：type=6</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">心电返回数据：type=7</th><th scope=\"col\"></th></tr></thead><tbody> 
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"50%\">pulseCount</td><td width=\"50%\">脉搏统计数</td></tr>
+ <tr><td width=\"50%\">pulseMax</td><td width=\"50%\">脉搏最大值</td></tr>
+ <tr><td width=\"50%\">pulseMax</td><td width=\"50%\">脉搏最小值</td></tr>
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">计步器返回数据：type=8</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">睡眠返回数据：type=9</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">体温返回数据：type=10</th><th scope=\"col\"></th></tr></thead><tbody>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"50%\">temperatureCount</td><td width=\"50%\">体温统计数</td></tr>
+ <tr><td width=\"50%\">temperatureMax</td><td width=\"50%\">体温最大值</td></tr>
+ <tr><td width=\"50%\">temperatureMin</td><td width=\"50%\">体温最小值</td></tr> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血尿酸返回数据：type=11</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">血尿返回数据：type=12</th><th scope=\"col\"></th></tr></thead><tbody> 
+ </tbody></table>
+ <table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">体重返回数据：type=13</th><th scope=\"col\"></th></tr></thead><tbody> 
+ <tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr>
+ <tr><td width=\"50%\">weightCount</td><td width=\"50%\">体重统计数</td></tr>
+ <tr><td width=\"50%\">weightMax</td><td width=\"50%\">体重最大值</td></tr>
+ <tr><td width=\"50%\">weightMin</td><td width=\"50%\">体重最小值</td></tr> 
+ </tbody></table>")
+
+
+ data={\"pocId\":\"1A8B5LUTA037D320HLE0263UPP66KO91\",\"type\":\"0\",\"currPage\":\"1\",\"pageSize\":\"10\"}" + 
+"||{\"status\":\"success\",\"data\":{},\"result_code\":\"01\",\"msg\":\"新闻or公益Or活动查询成功!\"}" 
++ "||{\"status\":\"fail\",\"result_code\":\"00/503\",\"msg\":\"新闻or公益Or活动查询失败!/服务器异常\"}" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">页码【默认为1】</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数据【默认为15】</td></tr>
+<tr><td width=\"25%\">pocId</td><td width=\"25%\">是</td><td width=\"50%\">poc机构Id</td></tr>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询类型【0：新闻；1：公益：2：活动】</td></tr>
+</td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">townid</td><td width=\"50%\">poc机构ID</td></tr>
+<tr><td width=\"50%\">staticurl</td><td width=\"50%\">静态路径</td></tr>
+<tr><td width=\"50%\">channel</td><td width=\"50%\">所属模型id</td></tr>
+<tr><td width=\"50%\">click</td><td width=\"50%\">点击数</td></tr>
+<tr><td width=\"50%\">title</td><td width=\"50%\">标题</td></tr>
+<tr><td width=\"50%\">shorttitle</td><td width=\"50%\">简明标题</td></tr>
+<tr><td width=\"50%\">content</td><td width=\"50%\">文章内容</td></tr>
+<tr><td width=\"50%\">writer</td><td width=\"50%\">作者</td></tr>
+<tr><td width=\"50%\">source</td><td width=\"50%\">文档来源</td></tr>
+<tr><td width=\"50%\">litpic</td><td width=\"50%\">缩略图</td></tr>
+<tr><td width=\"50%\">pubdate</td><td width=\"50%\">发布时间</td></tr>
+<tr><td width=\"50%\">description</td><td width=\"50%\">摘要</td></tr>
+<tr><td width=\"50%\">typeid</td><td width=\"50%\">类型Id【16新闻；17；公益；18：活动】</td></tr>
+<tr><td width=\"50%\">goodpost</td><td width=\"50%\">好评</td></tr>
+<tr><td width=\"50%\">badpost</td><td width=\"50%\">差评</td></tr><tr>
+<td width=\"50%\">notpost</td><td width=\"50%\">评论选项：1=允许评论</td></tr>
+<tr><td width=\"50%\">dutyadmin</td><td width=\"50%\">负责审核管理员的id</td></tr>
+<tr><td width=\"50%\">istop</td><td width=\"50%\">是否头条</td></tr>
+<tr><td width=\"50%\">recommend</td><td width=\"50%\">是否推荐</td></tr>
+<tr><td width=\"50%\">typename</td><td width=\"50%\">栏目名称</td></tr>
+<tr><td width=\"50%\">total</td><td width=\"50%\">新闻总条数</td></tr>
+<tr><td width=\"50%\">url</td><td width=\"50%\">站点url【静态url= url+staticurl】</td></tr>
+</tbody></table>
+
+
+
+/获取用户健康报告
+data={\"uId\":\"xxxx\"}" + 
+"||{\"status\":\"success\",\"data\":{},\"result_code\":\"200\",\"msg\":\"获取用户健康报告成功！\"}" +
+ "||{\"status\":\"fail\",\"result_code\":\"400/503\",\"msg\":\"获取用户健康报告失败!/服务器异常\"}" + 
+ "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody>
+ <tr><td width=\"25%\">uId</td><td width=\"25%\">是</td><td width=\"50%\">用户id</td></tr>
+ </td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+ <tr><td width=\"50%\">user</td><td width=\"50%\">用户信息</td></tr>
+ <tr><td width=\"50%\">healthBloodPressure</td><td width=\"50%\">血压数据</td></tr>
+ <tr><td width=\"50%\">healthBloodSuga</td><td width=\"50%\">血糖数据</td></tr>
+ <tr><td width=\"50%\">healthBloodOxygen</td><td width=\"50%\">血氧数据</td></tr>
+ <tr><td width=\"50%\">healthBody</td><td width=\"50%\">人体数据</td></tr>
+ <tr><td width=\"50%\">healthCholesterol</td><td width=\"50%\">胆固醇数据</td></tr>
+ <tr><td width=\"50%\">healthEcgAbnormality</td><td width=\"50%\">心电异常数据</td></tr>
+ <tr><td width=\"50%\">healthEcg</td><td width=\"50%\">心电数据</td></tr>
+ <tr><td width=\"50%\">healthPedometer</td><td width=\"50%\">计步器数据</td></tr>
+ <tr><td width=\"50%\">healthSleep</td><td width=\"50%\">睡眠数据</td></tr>
+ <tr><td width=\"50%\">healthTemperature</td><td width=\"50%\">体温数据</td></tr>
+ <tr><td width=\"50%\">healthUricacid</td><td width=\"50%\">血尿酸数据</td></tr>
+ <tr><td width=\"50%\">healthUrine</td><td width=\"50%\">血尿数据</td></tr>
+ <tr><td width=\"50%\">healthWeight</td><td width=\"50%\">体重数据</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthBloodPressure血压数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">systolic</td><td width=\"50%\">收缩压</td></tr><tr><td width=\"50%\">diastolic</td><td width=\"50%\">舒张压</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">fruit</td><td width=\"50%\">心率结果（0-心率不齐，1心率正常）</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthBloodSuga血糖数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodsugar</td><td width=\"50%\">血糖值，单位：mmol/L</td></tr><tr><td width=\"50%\">type</td><td width=\"50%\">1空腹，2餐前，3餐后</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthBloodOxygen血氧数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">bloodoxygen</td><td width=\"50%\">血氧</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthBody人体数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">muscle</td><td width=\"50%\">肌肉量</td></tr><tr><td width=\"50%\">adiposerate</td><td width=\"50%\">脂肪率</td></tr><tr><td width=\"50%\">visceralfat</td><td width=\"50%\">内脏脂肪</td></tr><tr><td width=\"50%\">moisture</td><td width=\"50%\">人体水分</td></tr><tr><td width=\"50%\">bone</td><td width=\"50%\">骨量</td></tr><tr><td width=\"50%\">thermal</td><td width=\"50%\">热量</td></tr><tr><td width=\"50%\">basalMetabolism</td><td width=\"50%\">基础代谢</td></tr><tr><td width=\"50%\">metabolism</td><td width=\"50%\">新陈代谢</td></tr><tr><td width=\"50%\">bmi</td><td width=\"50%\">BMI</td></tr><tr><td width=\"50%\">impedance</td><td width=\"50%\">阻抗</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthCholesterol胆固醇数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">cholesterol</td><td width=\"50%\">胆固醇</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthEcgAbnormality心电异常数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">exceptionStartTime</td><td width=\"50%\">异常开始时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">exceptionEndTime</td><td width=\"50%\">异常结束时间,格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">alertInfo</td><td width=\"50%\">报警信息</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值,逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthEcg心电数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间</td></tr><tr><td width=\"50%\">ecg</td><td width=\"50%\">心电波形数据，Base64编码</td></tr><tr><td width=\"50%\">hr</td><td width=\"50%\">心率值，逗号分隔字符串</td></tr><tr><td width=\"50%\">st1</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">st2</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">pvcs</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">rr</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">dlMethod</td><td width=\"50%\">导联方式</td></tr><tr><td width=\"50%\">zy</td><td width=\"50%\">增益</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">pulse</td><td width=\"50%\">脉搏</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthPedometer计步器数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\"></td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">steps</td><td width=\"50%\">步数</td></tr><tr><td width=\"50%\">kilometres</td><td width=\"50%\">距离</td></tr><tr><td width=\"50%\">caloric</td><td width=\"50%\">卡路里</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthSleep睡眠数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">startTime</td><td width=\"50%\">开始时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">endTime</td><td width=\"50%\">结束时间，格式：yyyy-MM-dd HH:mm:ss</td></tr><tr><td width=\"50%\">sleep</td><td width=\"50%\">睡眠数据，Base64编码</td></tr><tr><td width=\"50%\">medicId</td><td width=\"50%\">医生id</td></tr><tr><td width=\"50%\">spo2</td><td width=\"50%\">血血氧饱和度，逗号分隔字符串</td></tr><tr><td width=\"50%\">pr</td><td width=\"50%\">脉搏，逗号分隔字符串</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthTemperature体温数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">temperature</td><td width=\"50%\">体温，单位：摄氏度</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthUricacid血尿酸数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">uricacid</td><td width=\"50%\">血尿酸</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthUrine血尿数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">leu</td><td width=\"50%\">白细胞</td></tr><tr><td width=\"50%\">nit</td><td width=\"50%\">亚硝酸盐</td></tr><tr><td width=\"50%\">ubg</td><td width=\"50%\">尿胆原</td></tr><tr><td width=\"50%\">pro</td><td width=\"50%\">蛋白质</td></tr><tr><td width=\"50%\">ph</td><td width=\"50%\">PH</td></tr><tr><td width=\"50%\">bld</td><td width=\"50%\">潜血</td></tr><tr><td width=\"50%\">sg</td><td width=\"50%\">比重</td></tr><tr><td width=\"50%\">ket</td><td width=\"50%\">酮体</td></tr><tr><td width=\"50%\">bil</td><td width=\"50%\">胆红素</td></tr><tr><td width=\"50%\">glu</td><td width=\"50%\">葡萄糖</td></tr><tr><td width=\"50%\">vc</td><td width=\"50%\">维生素C</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = healthWeight体重数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> <tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr><tr><td width=\"50%\">uId</td><td width=\"50%\">用户id</td></tr><tr><td width=\"50%\">apId</td><td width=\"50%\">运营商id</td></tr><tr><td width=\"50%\">devSn</td><td width=\"50%\">设备号</td></tr><tr><td width=\"50%\">devId</td><td width=\"50%\">设备ID</td></tr><tr><td width=\"50%\">dataSource</td><td width=\"50%\">数据来源</td></tr><tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr><tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr><tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级</td></tr><tr><td width=\"50%\">createTime</td><td width=\"50%\">创建时间</td></tr><tr><td width=\"50%\">dataTime</td><td width=\"50%\">采样时间</td></tr><tr><td width=\"50%\">waistline</td><td width=\"50%\">腰围</td></tr><tr><td width=\"50%\">weightIndex</td><td width=\"50%\">体重指数</td></tr></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">key = user用户数据</th></tr></thead><tbody></tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">username</td><td width=\"50%\">姓名</td></tr><tr>
+<td width=\"50%\">idcardNo</td><td width=\"50%\">身份证号</td></tr><tr>
+<td width=\"50%\">sex</td><td width=\"50%\">性别0男1女2未知</td></tr>
+<tr><td width=\"50%\">age</td><td width=\"50%\">年龄</td></tr>
+<tr><td width=\"50%\">nationality</td><td width=\"50%\">民族</td></tr>
+<tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">出生年月</td></tr>
+<tr><td width=\"50%\">weight</td><td width=\"50%\">体重</td></tr>
+<tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"50%\">career</td><td width=\"50%\">职业</td></tr>
+<tr><td width=\"50%\">careerType</td><td width=\"50%\">职业类型</td></tr>
+<tr><td width=\"50%\">healthCard</td><td width=\"50%\">健康卡</td></tr>
+<tr><td width=\"50%\">phoneNo</td><td width=\"50%\">手机号码</td></tr>
+<tr><td width=\"50%\">address</td><td width=\"50%\">地址</td></tr>
+</tbody></table>
+
+
+//
+{}
+||{\"status\":\"success\",\"data\":{},\"result_code\":\"01\",\"msg\":\"用户总是查询成功！\"}
+||{\"status\":\"fail\",\"result_code\":\"00/503\",\"msg\":\"用户总是查询失败！"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+</td></tr></tbody></table>||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody>
+<tr><td width=\"50%\">userSum</td><td width=\"50%\">操作结果：<br/>1000:密码修改成功！<br/>-1000:密码修改失败！<br/>-1001:原密码错误</td></tr>
+</tbody></table>")
+
+
+
+
+ data={\"depId\":\"1\",\"currPage\":\"1\",\"pageSize\":\"10\"}" + 
+"||{\"status\":\"success\",\"data\":{},\"result_code\":\"01\",\"msg\":\"居民用户查询成功!\"}" 
++ "||{\"status\":\"fail\",\"result_code\":\"00/503\",\"msg\":\"居民用户查询失败!/服务器异常\"}" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必填</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"25%\">currPage</td><td width=\"25%\">否</td><td width=\"50%\">页码【默认为1】</td></tr>
+<tr><td width=\"25%\">pageSize</td><td width=\"25%\">否</td><td width=\"50%\">分页数据【默认为15】</td></tr>
+<tr><td width=\"25%\">depId</td><td width=\"25%\">否</td><td width=\"50%\">部门Id【结果包含部门节点下所有部门的数据】</td></tr>
+<tr><td width=\"25%\">sex</td><td width=\"25%\">否</td><td width=\"50%\">性别0男1女2未知</td></tr>
+<tr><td width=\"25%\">username</td><td width=\"25%\">否</td><td width=\"50%\">用户名</td></tr>
+<tr><td width=\"25%\">phone</td><td width=\"25%\">否</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"25%\">personName</td><td width=\"25%\">否</td><td width=\"50%\">用户姓名</td></tr>
+<tr><td width=\"25%\">departmentName</td><td width=\"25%\">否</td><td width=\"50%\">部门名称</td></tr>
+<tr><td width=\"25%\">departmentId</td><td width=\"25%\">否</td><td width=\"50%\">部门Id【结果包含这个部门数据】</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">注册时间开始</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">注册时间结束</td></tr>
+</td></tr></tbody></table>" + "||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">id</td><td width=\"50%\">主键</td></tr>
+<tr><td width=\"50%\">uId</td><td width=\"50%\">用户Id</td></tr>
+<tr><td width=\"50%\">departmentId</td><td width=\"50%\">部门Id</td></tr>
+<tr><td width=\"50%\">username</td><td width=\"50%\">用户名</td></tr>
+<tr><td width=\"50%\">birthdayTime</td><td width=\"50%\">生日</td></tr>
+<tr><td width=\"50%\">height</td><td width=\"50%\">身高</td></tr>
+<tr><td width=\"50%\">idcardNo</td><td width=\"50%\">身份证</td></tr>
+<tr><td width=\"50%\">iId</td><td width=\"50%\">图像</td></tr>
+<tr><td width=\"50%\">nickName</td><td width=\"50%\">呢称</td></tr>
+<tr><td width=\"50%\">personName</td><td width=\"50%\">用户姓名</td></tr>
+<tr><td width=\"50%\">phone</td><td width=\"50%\">手机号</td></tr>
+<tr><td width=\"50%\">qrCode</td><td width=\"50%\">二位码</td></tr>
+<tr><td width=\"50%\">sex</td><td width=\"50%\">性别0男1女2未知</td></tr>
+<tr><td width=\"50%\">departmentName</td><td width=\"50%\">部门名称</td></tr>
+<tr><td width=\"50%\">createTime</td><td width=\"50%\">注册时间</td></tr>
+<tr><td width=\"50%\">age</td><td width=\"50%\">年龄</td></tr><tr>
+</tbody></table>
+
+
+
+//健康数据水平历史记录查询
+ data=<br/>{\"type\":\"3\"}
+||{\"status\":\"success\",\"result_code\":\"01\",\"data\":[],\"msg\":\"健康数据水平历史记录查询成功！\"}
+||{\"status\":\"fail\",,\"result_code\":\"00/503\",\"msg\":\"健康数据水平历史记录查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr>
+</td></tr><tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备Id</td></tr>
+<tr><td width=\"25%\">departmentId</td><td width=\"25%\">与structure 二选一</td><td width=\"50%\">组织ID【本机构Id】</td></tr>
+<tr><td width=\"25%\">structure</td><td width=\"25%\">与departmentId 二选一】</td><td width=\"50%\">数据层级结构关系</td></tr>
+<tr><td width=\"25%\">year</td><td width=\"25%\">否</td><td width=\"50%\">年【默认为当先年demo2016】</td></tr>
+<tr><td width=\"25%\">month</td><td width=\"25%\">否</td><td width=\"50%\">月</td></tr>
+<tr><td width=\"25%\">day</td><td width=\"25%\">否</td><td width=\"50%\">日</td></tr>
+<tr><td width=\"25%\">createTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间</td></tr>
+</tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">yearSum</td><td width=\"50%\">年统计总数据</td></tr><tr>
+<td width=\"50%\">janSum</td><td width=\"50%\">一月统计总数据</td></tr><tr>
+<td width=\"50%\">febSum</td><td width=\"50%\">二月统计总数据</td></tr>
+<tr><td width=\"50%\">marSum</td><td width=\"50%\">三月统计总数据</td></tr>
+<tr><td width=\"50%\">aprSum</td><td width=\"50%\">四月统计总数据</td></tr>
+<tr><td width=\"50%\">maySum</td><td width=\"50%\">五月统计总数据</td></tr>
+<tr><td width=\"50%\">juneSum</td><td width=\"50%\">六月统计总数据</td></tr>
+<tr><td width=\"50%\">julySum</td><td width=\"50%\">七月统计总数据</td></tr>
+<tr><td width=\"50%\">augSum</td><td width=\"50%\">八月统计总数据</td></tr>
+<tr><td width=\"50%\">septSum</td><td width=\"50%\">九月统计总数据</td></tr>
+<tr><td width=\"50%\">octSum</td><td width=\"50%\">十月统计总数据</td></tr>
+<tr><td width=\"50%\">movSum</td><td width=\"50%\">十一月统计总数据</td></tr>
+<tr><td width=\"50%\">decSum</td><td width=\"50%\">十二月统计总数据</td></tr>
+<tr><td width=\"50%\">healthLevel</td><td width=\"50%\">分组名称</td></tr>
+</tbody></table>
+
+//水平与性别关系记录查询
+ data=<br/>{\"type\":\"3\",\"structure\":\"1.188.\"}
+||{\"status\":\"success\",\"result_code\":\"01\",\"data\":[],\"msg\":\"水平与性别关系查询失败查询成功！\"}
+||{\"status\":\"fail\",,\"result_code\":\"00/503\",\"msg\":\"水平与性别关系查询失败失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr>
+</td></tr><tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备Id</td></tr>
+<tr><td width=\"25%\">departmentId</td><td width=\"25%\">与structure 二选一</td><td width=\"50%\">组织ID【本机构Id】</td></tr>
+<tr><td width=\"25%\">structure</td><td width=\"25%\">与departmentId 二选一】</td><td width=\"50%\">数据层级结构关系</td></tr>
+<tr><td width=\"25%\">createTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间</td></tr>
+</tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">gender</td><td width=\"50%\">性别【0女1男】</td></tr><tr>
+<td width=\"50%\">countSum</td><td width=\"50%\">数量</td></tr><tr>
+</tbody></table>
+
+
+//健康数据水平历史记录查询
+ data=<br/>{\"type\":\"3\",\"structure\":\"1.188.\"}
+||{\"status\":\"success\",\"result_code\":\"01\",\"data\":[],\"msg\":\"用户水平分布关系查询成功！\"}
+||{\"status\":\"fail\",,\"result_code\":\"00/503\",\"msg\":\"用户水平分布关系查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+<tr><td width=\"25%\">type</td><td width=\"25%\">是</td><td width=\"50%\">查询数据类型【1：血压；2：血糖；3：血氧；4：人体数据；5：胆固醇；6：心电异常；7：心电；8：计步器；9：睡眠；10：体温；11：血尿酸；12：血尿；13：体重】</td></tr>
+</td></tr><tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备Id</td></tr>
+<tr><td width=\"25%\">departmentId</td><td width=\"25%\">与structure 二选一</td><td width=\"50%\">组织ID【本机构Id】</td></tr>
+<tr><td width=\"25%\">structure</td><td width=\"25%\">与departmentId 二选一】</td><td width=\"50%\">数据层级结构关系</td></tr>
+<tr><td width=\"25%\">createTimeEnd</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr>
+<tr><td width=\"25%\">createTimeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间</td></tr>
+</tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">healthLevel</td><td width=\"50%\">健康等级<br/>
+血压：{ \"1\", \"低血压\" }, { \"2\", \"理想血压\" },   { \"3\", \"正常血压\" }, { \"4\", \"正常高值\" }, { \"5\", \"临界高血压\" }, { \"6\", \"一级高血压\" },   { \"7\", \"二级高血压\" }, { "8", "三级高血压" }
+<br/>
+血糖:{ \"1\", \"良好\" }, { \"2\", \"一般\" },   { \"3\", \"不良\" }
+<br/>
+体温:{ \"1\", \"低温\" }, { \"2\", \"正常\" },   { \"3\", \"低热\" }, { \"4\", \"中度发热\" }, { \"5\", \"高热\" }, { \"6\", \"严重高热\" }
+<br/>
+体重:{ \"1\", \"体重过轻\" }, { \"2\", \"正常范围\" },   { \"3\", \"体重超重\" }, { \"4\", \"I度肥胖\" }, { \"5\", \"II度肥胖\" }, { \"6\", \"III度肥胖\" }
+</td></tr><tr>
+<td width=\"50%\">countSum</td><td width=\"50%\">数量</td></tr><tr>
+</tbody></table>
+
