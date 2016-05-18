@@ -1110,8 +1110,24 @@ data={\"uId\":\"xxxx\"}" +
 <td width=\"50%\">countSum</td><td width=\"50%\">数量</td></tr><tr>
 </tbody></table>
 
-//
-hehe wo xue git yong de 
-
-//
-di er hang 
+//设备活跃量查询情况
+ data=<br/>{\"structure\":\"1.188.\"}
+||{\"status\":\"success\",\"result_code\":\"01\",\"data\":[],\"msg\":\"设备活跃量查询成功！\"}
+||{\"status\":\"fail\",,\"result_code\":\"00/503\",\"msg\":\"设备活跃量查询失败\"}
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">是否必须</th><th scope=\"col\">说明</th></tr></thead>
+<tbody>
+</td></tr><tr><td width=\"25%\">devId</td><td width=\"25%\">否</td><td width=\"50%\">设备Id</td></tr>
+<tr><td width=\"25%\">departmentId</td><td width=\"25%\">与structure 二选一</td><td width=\"50%\">组织ID【本机构Id】</td></tr>
+<tr><td width=\"25%\">structure</td><td width=\"25%\">与departmentId 二选一】</td><td width=\"50%\">数据层级结构关系</td></tr>
+<tr><td width=\"25%\">timeBegin</td><td width=\"25%\">否</td><td width=\"50%\">开始时间【优先选择】</td></tr>
+<tr><td width=\"25%\">timeEnd</td><td width=\"25%\">否</td><td width=\"50%\">结束时间</td></tr>
+<tr><td width=\"25%\">mode</td><td width=\"25%\">否</td><td width=\"50%\">时间统计方式时【0：前推时间 例如：范围 上个月15到这个月15;1：自然时间,例如 上个月:上个月1号到月底  默认0】</td></tr>
+<tr><td width=\"25%\">timeType</td><td width=\"25%\">否</td><td width=\"50%\">时间单位【0：年；1：月；2：周；3：日 默认1】</td></tr>
+<tr><td width=\"25%\">timeNum</td><td width=\"25%\">否</td><td width=\"50%\">时间数【默认 1 例如：查前推时间前3个月的数据 mode=0 timeType = 1 timeNum=3】</td></tr>
+<tr><td width=\"25%\">lat</td><td width=\"25%\">否</td><td width=\"50%\">时间纬度【0：年；1：月；2：周；3：日 默认3】</td></tr>
+</tbody></table>
+||<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\"><thead><tr><th scope=\"col\">字段</th><th scope=\"col\">说明</th></tr></thead><tbody> 
+<tr><td width=\"50%\">year</td><td width=\"50%\">年</td></tr><tr>
+<tr><td width=\"50%\">month</td><td width=\"50%\">月</td></tr><tr>
+<tr><td width=\"50%\">day</td><td width=\"50%\">日</td></tr><tr>
+<td width=\"50%\">countNum</td><td width=\"50%\">数量</td></tr><tr></tbody></table>
